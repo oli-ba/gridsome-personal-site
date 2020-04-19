@@ -5,6 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+  siteName: 'Olivier Balaguer',
+  siteUrl: 'https://www.olivierbalaguer.com',
+  siteDescription: 'User Interface designer based in London, UK.',
+  plugins: [
+    {use: 'gridsome-plugin-tailwindcss'},
+    {use: 'vue-clipboard2'},
+    {use: 'gridsome-plugin-svg'}
+  ],
+  
 }
