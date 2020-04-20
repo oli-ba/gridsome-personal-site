@@ -1,13 +1,17 @@
 <template>
-  <Layout>
-    <section class="hero h-screen text-pblue px-6 xl:px-16 flex flex-col justify-center">
-      <h2 class="font-display leading-tight lg:text-9xl md:text-6xl sm:text-3xl">
-        What <br>&amp; How
+  <Layout class="bg-pink">
+    <section class="hero text-pblue p-6 pb-0 pt-8 flex flex-col justify-center w-3/5">
+      <h2 class="font-display leading-tight text-8xl mb-4">
+        How I can help out
       </h2>
-      <p class="font-body">I help companies big and small create timeless digital touchpoints. <br>
-      The result: delightful experiences that leave a lasting impression. <br>
-      Want to change direction, change behaviour, or change the world?</p>
-      <div class="lead py-16"></div>
+      <p class="font-body text-xl mb-4">I help companies big and small create timeless digital touchpoints.
+      The result: delightful experiences that leave a lasting impression.</p>
+      <p class="font-body text-xl mb-8">Want to change direction, change behaviour, or change the world?</p>
+      <g-link to="/process/" class="flex items-center text-lg mb-12">
+        See how I can help out 
+        <ArrowRight class="ml-4"/>
+      </g-link>
+      <div class="lead h-48"></div>
     </section>
   </Layout>
 </template>
@@ -15,7 +19,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'What I do | Olivier Balaguer',
+    title: 'How I can help out | Olivier Balaguer',
     meta: [
       {key: 'description', name: 'description', content: 'Olivier is a multidisciplanary designer'}
     ]

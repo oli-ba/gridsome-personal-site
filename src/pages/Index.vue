@@ -1,6 +1,6 @@
 <template>
   <Layout class="bg-pink">
-    <section class="hero text-pblue p-6 pb-0 pt-8 flex flex-col justify-center">
+    <section class="hero text-pblue p-6 pb-0 pt-8 flex flex-col justify-center w-3/5">
       <h2 class="font-display leading-tight text-6xl mb-4">
         UI/UX Specialist
       </h2>
@@ -8,7 +8,7 @@
       The result: delightful experiences that leave a lasting impression.</p>
       <p class="font-body text-xl mb-8">Want to change direction, change behaviour, or change the world?</p>
       <g-link to="/process/" class="flex items-center text-lg mb-12">
-        See how I can help out 
+        See how I can help you out 
         <ArrowRight class="ml-4"/>
       </g-link>
       <div class="lead h-48"></div>
@@ -23,6 +23,7 @@
         <Deliveroo class="pink"/>
         <MCSaatchi class="pink"/>
         <FCC class="pink"/>
+        <EEMS class="pink"/>
       </div>
     </section>
     <section class="featured-work px-6 xl:px-16 py-16">
@@ -44,6 +45,19 @@
     margin: 1rem;
     opacity: 1;
     transition: opacity 0.25s ease-in;
+  }
+  a:hover {
+    border-bottom: none;
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+
+    background-position: 0 100%;
+
+    background-size: auto 6px;
+
+    background-repeat: repeat-x;
+
+    text-decoration: none;
   }
   @screen md {
     .clients svg {opacity: 0.8;}
@@ -67,6 +81,7 @@ import Ticketmaster from '~/assets/svgs/ticketmaster.svg?inline'
 import Deliveroo from '~/assets/svgs/deliveroo.svg?inline'
 import MCSaatchi from '~/assets/svgs/mc-saatchi.svg?inline'
 import FCC from '~/assets/svgs/future-cities-catapult.svg?inline'
+import EEMS from '~/assets/svgs/eems.svg?inline'
 import RightArrow from '~/assets/svgs/icon-arrow-right.svg?inline'
 import ArrowRight from '~/assets/svgs/arrow-right'
 
@@ -82,6 +97,7 @@ export default {
     Deliveroo,
     MCSaatchi,
     FCC,
+    EEMS,
     RightArrow,
     ArrowRight
   }

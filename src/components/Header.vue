@@ -4,8 +4,8 @@
       <g-link to="/">{{ $static.metadata.siteName }}</g-link>
     </h1>
     <nav class="flex justify-around w-full md:w-1/2">
+      <g-link to="/process/">How I can help</g-link>
       <g-link to="/about/">About Me</g-link>
-      <g-link to="/process/">My Process</g-link>
       <!-- <g-link to="/case-studies/">Work I've done</g-link> -->
       <g-link to="/hire-me/">Hire me</g-link>
     </nav>

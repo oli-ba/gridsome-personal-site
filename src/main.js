@@ -12,4 +12,17 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Kulim+Park:400,600|Libre+Baskerville:400i&display=swap'
   })
+
+  Vue.filter('formatDate', function (date) {
+    if (!date) return 'Not a valid date'
+    date = date.toString()
+    // return date.charAt(0).toUpperCase() + date.slice(1)
+
+    // const d = new Date(date)
+    const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(date)
+    const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(date)
+    const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(date)
+
+    return `${da}-${mo}-${ye}`
+  })
 }
