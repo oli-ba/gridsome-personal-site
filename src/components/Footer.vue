@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col md:flex-row justify-between items-center bg-pink text-pblue px-6 xl:px-16 w-screen"
+    class="flex flex-col md:flex-row justify-between items-center bg-pink text-pblue w-screen py-3"
   >
     <div class="p-4">&copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.</div>
     <div class="w-full md:w-1/3 order-first md:order-last p-4">
@@ -14,7 +14,7 @@
           >
             <IconEmail />Email Me
           </button>
-          <p class="text-xs absolute m-auto">{{message}}</p>
+          <p class="text-xs absolute m-auto fade-in-out">{{message}}</p>
           <!-- <p class="text-xs" v-if="onCopy === true">Address copied to clipboard</p> -->
           <!-- <p v-if="onError === true">Copied!</p> -->
         </li>
@@ -40,6 +40,14 @@
 <style scoped>
 footer svg {
   @apply w-6 h-6 m-auto;
+}
+.fade-in-out {
+  animation: in-out 2s ease;
+}
+@keyframes in-out {
+  0% {opacity: 0}
+  50% {opacity: 1}
+  100% {opacity: 0;}
 }
 </style>
 <static-query>

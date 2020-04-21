@@ -1,9 +1,9 @@
 <template>
-  <header class="flex flex-col md:flex-row justify-between items-start md:items-center bg-pblue text-pink px-6 xl:px-16 w-screen">
-    <h1 class="text-2xl">
+  <header class="flex flex-col md:flex-row justify-between items-start md:items-center bg-pblue text-pink w-screen h-24 py-3">
+    <h1 class="text-4xl">
       <g-link to="/">{{ $static.metadata.siteName }}</g-link>
     </h1>
-    <nav class="flex justify-around w-full md:w-1/2">
+    <nav class="flex justify-between md:justify-around w-full md:w-1/2">
       <g-link to="/process/">How I can help</g-link>
       <g-link to="/about/">About Me</g-link>
       <!-- <g-link to="/case-studies/">Work I've done</g-link> -->
