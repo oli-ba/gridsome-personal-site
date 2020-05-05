@@ -5,7 +5,8 @@ import DefaultLayout from '~/layouts/Default.vue';
 import VueClipboard from 'vue-clipboard2';
 
 export default function (Vue, { router, head, isClient }) {
-  Vue.use(VueClipboard);
+  Vue.use(VueClipboard)
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   head.link.push({
@@ -25,4 +26,5 @@ export default function (Vue, { router, head, isClient }) {
 
     return `${da}-${mo}-${ye}`
   })
+  
 }

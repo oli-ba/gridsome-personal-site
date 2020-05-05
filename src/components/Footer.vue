@@ -38,6 +38,7 @@
   </footer>
 </template>
 <style scoped>
+li { @apply list-none}
 footer svg {
   @apply w-6 h-6 m-auto;
 }

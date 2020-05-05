@@ -1,17 +1,16 @@
 <template>
   <Layout class="bg-pink">
-    <section class="hero text-pblue flex flex-col justify-start">
+    <section class="hero text-pblue flex flex-col justify-start pb-0">
       <div class="flex flex-col md:flex-row">
         <div class="md:w-3/5">
-          <h2 class="font-display leading-tight mb-4">
+          <h2 class="font-display leading-none mb-6">
             Hello World,
           </h2>
           <p class="font-body text-xl mb-4">
-            I help companies big and small create timeless digital touchpoints.
-            The result: delightful experiences that leave a lasting impression.
+            Sint cillum veniam enim labore quis occaecat ad consequat duis. Anim sint veniam dolor excepteur labore cillum in reprehenderit. Ea nostrud excepteur amet dolor dolore id velit culpa anim eiusmod aliqua amet. Quis amet id ad aliquip veniam aliqua deserunt est eiusmod et esse excepteur et aute. Mollit incididunt sint aliquip aute do aliquip magna in labore esse magna. Aliquip laboris cillum mollit fugiat ad tempor laborum.
           </p>
           <p class="font-body text-xl mb-8">Want to change direction, change behaviour, or change the world?</p>
-          <g-link to="/hire-me/" class="flex items-center text-lg mb-12">
+          <g-link to="/hire-me/" class="cta flex items-center text-lg mb-12">
             Hire me 
             <ArrowRight class="ml-4"/>
           </g-link>
@@ -23,17 +22,24 @@
       <div class="lead h-48"></div>
     </section>
     <section class="hero bg-pblue text-pink flex flex-col justify-center">
-      <h2 class="font-display leading-tight text-4xl mb-1">Previous Experience</h2>
+      <h2 class="font-display leading-tight text-4xl mb-12">Previous Experience</h2>
       
-      <div class="mb-6" v-for="job in jobs" :key="job.id">
-        <h6>{{job.period}}</h6>
-        <h3>{{job.client}}</h3>
-        <h6>{{job.role}}</h6>
+      <div class="experience flex flex-col mb-6 pl-2" v-for="job in jobs" :key="job.id">
+        <h3 class="order-2">{{job.client}}</h3>
+        <h6 class="order-1 text-sm">{{job.period}}</h6>
+        <h6 class="order-3 text-sm">{{job.role}}</h6>
       </div>
     </section>
 
   </Layout>
 </template>
+
+<style scoped>
+h3 {@apply text-xl}
+.experience {
+  border-left: 0.5rem solid theme('colors.pink');
+}
+</style>
 
 <script>
 import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
