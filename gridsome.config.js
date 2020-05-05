@@ -11,7 +11,24 @@ module.exports = {
   plugins: [
     {use: 'gridsome-plugin-tailwindcss'},
     {use: 'vue-clipboard2'},
-    {use: 'gridsome-plugin-svg'}
-  ],
-  
+    {use: 'gridsome-plugin-svg'},
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Work', // Required
+        baseDir: './src/content/work', // Where .md files are located
+        pathPrefix: '/work', // Add route prefix. Optional
+        template: './src/templates/Template_work.vue' // Optional
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Blog', // Required
+        baseDir: './src/content/blog', // Where .md files are located
+        pathPrefix: '/blog', // Add route prefix. Optional
+        template: './src/templates/Template_blog.vue' // Optional
+      }
+    }
+  ]
 }

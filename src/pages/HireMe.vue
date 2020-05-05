@@ -1,19 +1,31 @@
 <template>
-  <Layout>
-    <section class="hero h-screen text-pblue px-6 xl:px-16 flex flex-col justify-center">
-      <h2 class="font-display leading-tight lg:text-9xl">
-        Let's work <br>together
-      </h2>
-      <p class="font-body">I help companies big and small create timeless digital touchpoints. <br>
-      The result: delightful experiences that leave a lasting impression. <br>
-      Want to change direction, change behaviour, or change the world?</p>
-      <div class="lead py-16"></div>
+  <Layout class="bg-pink">
+    <section class="hero text-pblue flex flex-col justify-center pb-0">
+      <div class="md:w-3/5">
+        <h2 class="font-display leading-none mb-6">
+          Let's work together
+        </h2>
+        <p class="font-body text-xl mb-4">
+          Magna elit adipisicing mollit culpa. Reprehenderit exercitation veniam pariatur enim cupidatat pariatur enim excepteur culpa proident nisi. Nisi sit ipsum est laborum ipsum excepteur ullamco consectetur adipisicing labore aliquip cupidatat enim. Aliqua adipisicing ullamco aliquip excepteur fugiat nisi laborum laborum qui aute ut est. Labore exercitation ut duis aliquip non incididunt magna Lorem ea officia in magna.
+        </p>
+        <p class="font-body text-xl mb-8">Want to change direction, change behaviour, or change the world?</p>
+        <g-link to="/process/" class="cta flex items-center text-lg mb-12">
+          See how I can help you out 
+          <ArrowRight class="ml-4"/>
+        </g-link>
+      </div>
+      <div class="lead h-48"></div>
     </section>
   </Layout>
 </template>
 
 <script>
+import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
+
 export default {
+  components: {
+    ArrowRight
+  },
   metaInfo: {
     title: 'Get in touch'
   }
