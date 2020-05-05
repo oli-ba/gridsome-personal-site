@@ -1,18 +1,14 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot/>
+  <div class="flex flex-col">
+    <Header />
+      <transition name="fade" appear>
+        <main>
+            <slot />
+        </main>
+      </transition>
+    <Footer />
   </div>
 </template>
-
 <static-query>
 query {
   metadata {
@@ -20,31 +16,63 @@ query {
   }
 }
 </static-query>
+<script>
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
+export default {
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
+<style lang='scss'>
+
+.fade-enter-active {
+  transition: opacity .5s;
 }
 
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.fade-enter {
+  opacity: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
+.cta {
+  border: 1px solid theme('colors.bg-pblue');
+  @apply inline-flex p-2 px-4 rounded-full font-bold;
+  }
+svg.pink path {fill: theme('colors.pink')}
+/* section {@apply px-6 xl:px-16 py-16;} */
+section, .section, header, footer {
+  @apply px-6 py-16;
+  @screen md {
+    @apply px-16;
+  }
 }
-
-.nav__link {
-  margin-left: 20px;
+h2 {
+  @apply text-6xl;
+  @screen md {
+    @apply text-8xl;
+  }
 }
+h3 {
+  @apply text-4xl;
+  @screen md {
+    @apply text-6xl;
+  }
+}
+p {
+  @apply text-xl mb-4;
+}
+li {
+  @apply list-disc;
+}
+.lead {
+    background-image: url('data:image/svg+xml;utf8,<svg width="1" height="225" viewBox="0 0 1 225" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="-2.18557e-08" x2="0.50001" y2="225" stroke="%232017CC"/></svg>') ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    /* height: calc(100vh - 4rem); */
+  }
 </style>
