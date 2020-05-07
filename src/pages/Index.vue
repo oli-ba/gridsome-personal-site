@@ -2,12 +2,12 @@
   <Layout class="bg-pink">
     <section class="hero text-pblue flex flex-col justify-center pb-0">
       <div class="md:w-3/5">
-        <h2 v-if="name" class="font-display leading-none mb-6">
+        <h2 v-if="name !== 'undefined'" class="font-display leading-none mb-6">
           Hello {{name}}! <br>
           I'm Oli.
         </h2>
         <h2 v-else class="font-display leading-none mb-6">
-          UI/UX Specialist  
+          UI/UX Specialist
         </h2>
         <p class="font-body text-xl mb-4">I help companies big and small create timeless digital touchpoints.
         The result: delightful experiences that leave a lasting impression.</p>
@@ -115,16 +115,23 @@ import MCSaatchi from '~/assets/svgs/mc-saatchi.svg?inline'
 import FCC from '~/assets/svgs/future-cities-catapult.svg?inline'
 import EEMS from '~/assets/svgs/eems.svg?inline'
 import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
+import { store } from '~/main'
+
+// localStorage.setItem('name', this.$route.query.hello)
 
 export default {
   metaInfo: {
     title: 'Hello, world!'
   },
-  // data() {
-  //   return {
-  //     name: this.$route.query.hello
-  //   }
-  // },
+  beforeCreate() {
+    if(this.$route.query.hello !== undefined)
+      localStorage.setItem('name', this.$route.query.hello)
+  },
+  data() {
+    return {
+      name: localStorage.getItem('name')
+    }
+  },
   components: {
     DYC,
     VibePay,

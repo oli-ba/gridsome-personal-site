@@ -3,9 +3,22 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import VueClipboard from 'vue-clipboard2';
+// import Vuex from 'vuex'
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(VueClipboard)
+  // Vue.use(Vuex)
+  
+  // appOptions.store = new Vuex.Store({
+  //   state: {
+  //     name: null
+  //   },
+  //   mutations: {
+  //     setName (state, name) {
+  //       state.name += name
+  //     }
+  //   }
+  // })
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
