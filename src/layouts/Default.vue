@@ -39,17 +39,17 @@ export default {
 }
 
 .cta {
-  border: 1px solid theme('colors.pblue');
+  border: 1px solid theme('colors.colorPrimary');
   @apply inline-flex p-2 px-4 rounded-full font-bold transition-all;
   &:hover {
-    // border: 1px solid theme('colors.bg-pblue');
-    @apply bg-pblue text-pink shadow-lg transition-all duration-500 ease-in-out;
-    border: 1px solid theme('colors.pblue');
+    // border: 1px solid theme('colors.bg-colorPrimary');
+    @apply bg-colorPrimary text-colorSecondary shadow-lg transition-all duration-500 ease-in-out;
+    border: 1px solid theme('colors.colorPrimary');
 
-    & svg path {fill: theme('colors.pink')}
+    & svg path {fill: theme('colors.colorSecondary')}
   }
 }
-svg.pink path {fill: theme('colors.pink')}
+svg.colorSecondary path {fill: theme('colors.colorSecondary')}
 /* section {@apply px-6 xl:px-16 py-16;} */
 section, .section, header, footer div {
   @apply px-6 py-16;

@@ -1,6 +1,6 @@
 <template>
-  <Layout class="bg-pink">
-    <section class="hero text-pblue flex flex-col justify-center">
+  <Layout class="bg-colorSecondary">
+    <section class="hero text-colorPrimary flex flex-col justify-center">
       <div class="md:w-3/5">
         <h2 v-if="hasName == true" class="font-display mb-6">
           Glad you're curious {{name}}.<br>
@@ -20,7 +20,7 @@
       <div class="lead h-48"></div>
     </section>
     <section class="featured-work" id="work">
-      <h3 class="text-6xl text-pblue font-display mb-16">Latest Projects</h3>
+      <h3 class="text-6xl text-colorPrimary font-display mb-16">Latest Projects</h3>
       <div v-for="edge in $page.work.edges" :key="edge.node.id">
         <g-link :to='edge.node.path'>
           <Project :title="edge.node.title" :subtitle="edge.node.subtitle" />

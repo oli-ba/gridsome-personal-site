@@ -1,6 +1,6 @@
 <template>
-  <Layout class="bg-pink">
-    <section class="hero text-pblue flex flex-col justify-center pb-0">
+  <Layout class="bg-colorSecondary">
+    <section class="hero text-colorPrimary flex flex-col justify-center pb-0">
       <div class="md:w-2/3">
         <h2 v-if="hasName == true" class="font-display mb-6">
           Hello {{name}}! <br>
@@ -19,21 +19,21 @@
       </div>
       <div class="lead h-48"></div>
     </section>
-    <section class="clients bg-pblue text-pink">
+    <section class="clients bg-colorPrimary text-colorSecondary">
       <h3 class="text-xl text-center font-display mb-4">Previously At</h3>
       <div class="flex flex-wrap items-stretch justify-center">
-        <DYC class="pink"/>
-        <VibePay class="pink"/>
-        <Burberry class="pink"/>
-        <Ticketmaster class="pink"/>
-        <Deliveroo class="pink"/>
-        <MCSaatchi class="pink"/>
-        <FCC class="pink"/>
-        <EEMS class="pink"/>
+        <DYC class="colorSecondary"/>
+        <VibePay class="colorSecondary"/>
+        <Burberry class="colorSecondary"/>
+        <Ticketmaster class="colorSecondary"/>
+        <Deliveroo class="colorSecondary"/>
+        <MCSaatchi class="colorSecondary"/>
+        <FCC class="colorSecondary"/>
+        <EEMS class="colorSecondary"/>
       </div>
     </section>
 
-    <section class="text-pblue">
+    <section class="text-colorPrimary">
       <h3 class="text-4xl font-display mb-16">Why invest in good UX</h3>
       <div class="reasons">
         <div>
@@ -51,7 +51,7 @@
       </div>
     </section>
 
-    <section class="testimonial text-pblue">
+    <section class="testimonial text-colorPrimary">
       <h3 class="text-4xl font-display mb-16">Testimonials</h3>
       <div class="flex-col w-3/5">
         <p>I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion and the professional and swift delivery of any project we worked on have been consistently outstanding. Besides, Olivier is joy to work with; always friendly and interested in keeping abreast on the latest online and design developments. I happily recommend Olivier.</p>
@@ -76,17 +76,17 @@
     </section>
 
     <section class="featured-work">
-      <h3 class="text-6xl text-pblue font-display mb-16">Latest Projects</h3>
+      <h3 class="text-6xl text-colorPrimary font-display mb-16">Latest Projects</h3>
       <div v-for="edge in $page.work.edges" :key="edge.node.id">
         <g-link :to='edge.node.path'>
           <Project :title="edge.node.title" :subtitle="edge.node.subtitle" />
         </g-link>
       </div>
     </section>
-    <section class="call-out flex justify-center items-center py-16 bg-pblue text-right text-pink text-lg">
+    <section class="call-out flex justify-center items-center py-16 bg-colorPrimary text-right text-colorSecondary text-lg">
       <g-link to="/services/" class="flex items-center">
         See how I can help out
-        <ArrowRight class="pink ml-4" />
+        <ArrowRight class="colorSecondary ml-4" />
       </g-link>
     </section>
   </Layout>

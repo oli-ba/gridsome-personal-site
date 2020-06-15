@@ -1,5 +1,5 @@
 <template>
-  <Layout class="bg-pink text-pblue ">    
+  <Layout class="bg-colorSecondary text-colorPrimary ">    
     <section class="hero flex flex-col justify-center">
       <div class="flex-inline mb-6">
         <g-link to="/services/#work" class="cta justify-start">

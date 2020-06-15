@@ -1,6 +1,6 @@
 <template>
-  <Layout class="bg-pink">    
-    <section class="hero text-pblue flex flex-col justify-center">
+  <Layout class="bg-colorSecondary">    
+    <section class="hero text-colorPrimary flex flex-col justify-center">
       <div class="md:w-3/5">
         <h2 class="font-display leading-tight mb-4">
           {{ $page.blog.title }}

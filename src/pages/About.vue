@@ -1,6 +1,6 @@
 <template>
-  <Layout class="bg-pink">
-    <section class="hero text-pblue flex flex-col justify-start pb-0">
+  <Layout class="bg-colorSecondary">
+    <section class="hero text-colorPrimary flex flex-col justify-start pb-0">
       <div class="flex flex-col md:flex-row">
         <div class="md:w-3/5">
           <h2 class="font-display leading-none mb-6">
@@ -21,7 +21,7 @@
       </div>
       <div class="lead h-48"></div>
     </section>
-    <section class="hero bg-pblue text-pink flex flex-col justify-center">
+    <section class="hero bg-colorPrimary text-colorSecondary flex flex-col justify-center">
       <h2 class="font-display leading-tight text-4xl mb-12">Previous Experience</h2>
       
       <div class="experience flex flex-col mb-6 pl-2" v-for="job in jobs" :key="job.id">
@@ -37,7 +37,7 @@
 <style scoped>
 h3 {@apply text-xl}
 .experience {
-  border-left: 0.5rem solid theme('colors.pink');
+  border-left: 0.5rem solid theme('colors.colorSecondary');
 }
 </style>
 

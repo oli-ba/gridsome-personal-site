@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col md:flex-row justify-between items-center bg-pink text-pblue w-screen py-3"
+    class="flex flex-col md:flex-row justify-between items-center bg-colorSecondary text-colorPrimary w-screen py-3"
   >
     <div class="p-4">&copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.</div>
     <div class="w-full md:w-1/3 order-first md:order-last p-4">

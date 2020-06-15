@@ -1,6 +1,6 @@
 <template>
-  <Layout class="bg-pink">
-    <section class="hero text-pblue flex flex-col justify-center pb-0">
+  <Layout class="bg-colorSecondary">
+    <section class="hero text-colorPrimary flex flex-col justify-center pb-0">
       <div class="md:w-3/5">
         <h3 v-if="hasName == true" class="font-display leading-none mb-6">
           {{name}}, seen enough? Let's work together
