@@ -60,43 +60,48 @@ export default {
       jobs: [
         {
           client: 'Dream Yacht Charter',
-          role: 'UI Designer',
+          role: 'UI Designer (Contract)',
           period: 'Feb 2019 - Mar 2020'
         },
         {
           client: 'Vibe Pay',
-          role: 'UI Designer',
+          role: 'UI Designer (Contract)',
           period: 'Jul - Dec 2018'
         },
         {
           client: 'Burberry',
-          role: 'Email Developer',
+          role: 'Email Developer (Contract)',
           period: 'Jun 2017 - Jun 2018'
         },
         {
           client: 'Ticketmaster',
-          role: 'UI Designer',
+          role: 'UI Designer (Contract)',
           period: 'Nov 2016 - Apr 2017'
         },
         {
           client: 'Deliveroo',
-          role: 'Email Developer',
+          role: 'Email Developer (Contract)',
           period: 'Jul - Sep 2016'
         },
         {
           client: 'M&C Saatchi London',
-          role: 'Email Developer',
+          role: 'Email Developer (Contract)',
           period: 'Jul 2015 - Jun 2016'
         },
         {
           client: 'Future Cities Catapult',
-          role: 'UI Designer',
+          role: 'UI Designer (Contract)',
           period: 'Sep - Nov 2015'
         },
         {
           client: 'eBay Enterprise Marketing Solutions',
-          role: 'Email Developer',
+          role: 'Email Developer (Contract)',
           period: 'Mar - Jul 2015'
+        },
+        {
+          client: 'Ticketmaster UK',
+          role: 'Web Designer (Permanent)',
+          period: 'Oct 2011 - Jan 2015'
         }
       ]
     }

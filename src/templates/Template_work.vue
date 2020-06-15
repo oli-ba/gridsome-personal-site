@@ -6,10 +6,10 @@
         <ArrowRight class="transform -rotate-180 m-auto mr-4"/> Back to lastest work</g-link>
       </div>
       <div class="md:w-3/5">
-        <h2 class="font-display leading-tight mb-4">
+        <h2 class="font-display leading-none mb-4">
           {{ $page.work.title }}
         </h2>
-        <p class="font-body text-xl mb-4">{{ $page.work.excerpt }}</p>
+        <p class="font-body text-xl mb-4">{{ $page.work.subtitle }}</p>
       </div>
       <div class="lead h-48"></div>
     </section>
@@ -30,7 +30,7 @@ ul {@apply pl-3}
 query Work ($id: ID!) {
   work(id: $id) {
     title
-    excerpt
+    subtitle
   }
 }
 </page-query>

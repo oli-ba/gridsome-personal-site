@@ -14,7 +14,7 @@
           >
             <IconEmail />Email Me
           </button>
-          <p class="text-xs absolute m-auto fade-in-out">{{message}}</p>
+          <div v-if="hasCopied" class="text-xs absolute m-auto fade-in-out">{{message}}</div>
           <!-- <p class="text-xs" v-if="onCopy === true">Address copied to clipboard</p> -->
           <!-- <p v-if="onError === true">Copied!</p> -->
         </li>
@@ -43,7 +43,8 @@ footer svg {
   @apply w-6 h-6 m-auto;
 }
 .fade-in-out {
-  animation: in-out 2s ease;
+  opacity: 0;
+  animation: in-out 4s ease;
 }
 @keyframes in-out {
   0% {opacity: 0}
@@ -75,13 +76,15 @@ export default {
   data() {
     return {
       copyEmail: 'oli@olivierbalaguer.com',
-      message: null
+      message: null,
+      hasCopied: false
     }
   },
   methods: {
     onCopy: function (e) {
       // console.log('You just copied: ' + e.text)
-      this.message = 'Copied to clipboard'
+    this.message = 'Email address copied to clipboard'
+      this.hasCopied = true
     },
     onError: function (e) {
       // console.log('Failed to copy texts')

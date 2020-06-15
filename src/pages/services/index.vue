@@ -2,7 +2,11 @@
   <Layout class="bg-pink">
     <section class="hero text-pblue flex flex-col justify-center">
       <div class="md:w-3/5">
-        <h2 class="font-display leading-none mb-6">
+        <h2 v-if="hasName == true" class="font-display mb-6">
+          Glad you're curious {{name}}.<br>
+          Here's how I can help out.
+        </h2>
+        <h2 v-else class="font-display mb-6">
           How I can help&nbsp;out
         </h2>
         <p class="font-body text-xl mb-4">I help companies big and small create timeless digital touchpoints.
@@ -16,13 +20,10 @@
       <div class="lead h-48"></div>
     </section>
     <section class="featured-work" id="work">
-      <h3 class="text-6xl text-pblue font-display mb-16">Latest Work</h3>
+      <h3 class="text-6xl text-pblue font-display mb-16">Latest Projects</h3>
       <div v-for="edge in $page.work.edges" :key="edge.node.id">
         <g-link :to='edge.node.path'>
-          <div class="client flex flex-col justify-center items-center h-64 bg-white rounded-md hover:shadow-xl transition-shadow duration-500 ease-in-out mb-6">
-            <span class="text-2xl text-pblue font-sans">{{edge.node.title}}</span>
-            <span class="text-lg text-pblue font-sans">{{edge.node.excerpt}}</span>
-          </div>
+          <Project :title="edge.node.title" :subtitle="edge.node.subtitle" />
         </g-link>
       </div>
     </section>
@@ -39,7 +40,7 @@ query Work {
       node {
         id
         title
-        excerpt
+        subtitle
         path
         featured
       }
@@ -50,15 +51,27 @@ query Work {
 
 <script>
 import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
+import Project from '~/components/Project.vue'
 export default {
   components: {
-    ArrowRight
+    ArrowRight,
+    Project
   },
   metaInfo: {
     title: 'How I can help out | Olivier Balaguer',
     meta: [
       {key: 'description', name: 'description', content: 'Olivier is a multidisciplanary designer'}
     ]
+  },
+  created() {
+    if(localStorage.getItem('name'))
+      this.hasName = true
+  },
+  data() {
+    return {
+      hasName: false,
+      name: localStorage.getItem('name')
+    }
   }
 }
 </script>

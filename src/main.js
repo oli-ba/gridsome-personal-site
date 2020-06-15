@@ -24,7 +24,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('Layout', DefaultLayout)
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Kulim+Park:400,600|Libre+Baskerville:400i&display=swap'
+    href: 'https://fonts.googleapis.com/css?family=Kulim+Park:400,600|Libre+Baskerville:400&display=swap'
   })
 
   Vue.filter('formatDate', function (date) {

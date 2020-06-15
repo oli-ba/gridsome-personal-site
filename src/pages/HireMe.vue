@@ -2,7 +2,10 @@
   <Layout class="bg-pink">
     <section class="hero text-pblue flex flex-col justify-center pb-0">
       <div class="md:w-3/5">
-        <h2 class="font-display leading-none mb-6">
+        <h3 v-if="hasName == true" class="font-display leading-none mb-6">
+          {{name}}, seen enough? Let's work together
+        </h3>
+        <h2 v-else class="font-display leading-none mb-6">
           Let's work together
         </h2>
         <p class="font-body text-xl mb-4">
@@ -28,6 +31,11 @@ export default {
   },
   metaInfo: {
     title: 'Get in touch'
+  },
+  data() {
+    return {
+      name: localStorage.getItem('name')
+    }
   }
 }
 </script>
