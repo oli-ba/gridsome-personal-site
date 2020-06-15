@@ -1,12 +1,12 @@
 <template>
   <Layout class="bg-colorSecondary">
-    <section class="hero text-colorPrimary flex flex-col justify-center pb-0">
-      <div class="md:w-2/3">
+    <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-screen">
+      <div class="md:w-2/3 md:pt-24">
         <h2 v-if="hasName == true" class="font-display mb-6">
           Hello {{name}}! <br>
           I'm Oli, UI/UX specialist.
         </h2>
-        <h2 v-else class="font-display mb-6">
+        <h2 v-else class="font-display leading-tight mb-6">
           UI/UX Specialist
         </h2>
         <p class="font-body text-xl mb-4">I help companies big and small create timeless digital touchpoints.
@@ -17,9 +17,9 @@
           <ArrowRight class="ml-4"/>
         </g-link>
       </div>
-      <div class="lead h-48"></div>
+      <div class="lead h-full"></div>
     </section>
-    <section class="clients bg-colorPrimary text-colorSecondary">
+    <section class="clients bg-colorPrimary text-colorSecondary py-32">
       <h3 class="text-xl text-center font-display mb-4">Previously At</h3>
       <div class="flex flex-wrap items-stretch justify-center">
         <DYC class="colorSecondary"/>
@@ -33,41 +33,48 @@
       </div>
     </section>
 
-    <section class="text-colorPrimary">
-      <h3 class="text-4xl font-display mb-16">Why invest in good UX</h3>
+    <section class="text-colorPrimary text-center py-32">
+      <h3 class="text-4xl font-display mb-6">Why invest in good UX</h3>
       <div class="reasons">
-        <div>
+        <div class="mb-12">
+          <Doodle1 class="colorPrimary mb-6 m-auto"/>
           <h4>Differentiate your product</h4>
-          <p>In a noisy digital world, setting your product apart from the crowd can be difficult. Purchasing a off-the-shelf template is not the panacea for your products users.</p>
+          <p>In a noisy digital world, setting your product apart from the crowd can be difficult.</p>
         </div>
-        <div>
+        <div class="mb-12">
+          <Doodle2 class="colorPrimary mb-6 m-auto"/>
           <h4>Future-proof your product</h4>
-          <p>It’s not a buzzword to throw around lightly. UX is important because it aims to fulfil your user’s needs by defining a clear problem with clear solution.</p>
+          <p>UX is important because it aims to fulfil your user’s needs.</p>
         </div>
-        <div>
-          <h4>Keeps your products users happy</h4>
-          <p>Remember, users don’t want a quarter inch drill, they want a quarter inch hole! Keep them happy, keep them coming back.</p>
+        <div class="mb-12">
+          <Doodle3 class="colorPrimary mb-6 m-auto"/>
+          <h4>Delight your users</h4>
+          <p>If you keep them happy, they'll keep coming back.</p>
         </div>
       </div>
     </section>
 
     <section class="testimonial text-colorPrimary">
-      <h3 class="text-4xl font-display mb-16">Testimonials</h3>
-      <div class="flex-col w-3/5">
-        <p>I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion and the professional and swift delivery of any project we worked on have been consistently outstanding. Besides, Olivier is joy to work with; always friendly and interested in keeping abreast on the latest online and design developments. I happily recommend Olivier.</p>
-        <div class="flex">
-          <g-image src="~/assets/images/cornel_lazar.jpg" alt="A picture of Cornel Lazar" quality="100" width="80" height="80" fit="contain" class="rounded-full"></g-image>
+      <h3 class="text-4xl font-display mb-6">Testimonials</h3>
+      <div class="flex-col md:w-3/5 mb-16">
+        <p class="italic border-l-8 px-4 border-colorPrimary">I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion and the professional and swift delivery of any project we worked on have been consistently outstanding. <!--Besides, Olivier is joy to work with; always friendly and interested in keeping abreast on the latest online and design developments. I happily recommend Olivier.--></p>
+        <div class="flex flex-row">
           <div>
+            <g-image src="~/assets/images/cornel_lazar.jpg" alt="A picture of Cornel Lazar" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
+          </div>
+          <div class="px-4">
             <h4 class="text-xl">Cornel Lazar</h4>
             <div>Marketing Director</div>
           </div>
         </div>
       </div>
-      <div class="flex-col w-3/5">
-        <p>I have worked with Olivier on a variety of projects over the past few years and have always been incredibly pleased with his work. His work on the redesign of one of our web products brought new life and ease of use to a critical tool for a client in Ireland. Olivier also delivered our responsive email templates for use during the Rugby World Cup, including a particular email which was highly sensitive and complex. His work is always outstanding, on point for the project brief, and delivered with integrity and professionalism. I cannot recommend Olivier enough!</p>
-        <div class="flex">
-          <g-image src="~/assets/images/bridget_krull.jpg" alt="A picture of Bridget Krull" quality="100" width="80" height="80" fit="contain" class="rounded-full"></g-image>
+      <div class="flex-col md:w-3/5">
+        <p class="italic border-l-8 px-4 border-colorPrimary"><!--I have worked with Olivier on a variety of projects over the past few years and have always been incredibly pleased with his work. His work on the redesign of one of our web products brought new life and ease of use to a critical tool for a client in Ireland. Olivier also delivered our responsive email templates for use during the Rugby World Cup, including a particular email which was highly sensitive and complex.--> His work is always outstanding, on point for the project brief, and delivered with integrity and professionalism. I cannot recommend Olivier enough!</p>
+        <div class="flex flex-row">
           <div>
+            <g-image src="~/assets/images/bridget_krull.jpg" alt="A picture of Bridget Krull" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
+          </div>
+          <div class="px-4">
             <h4 class="text-xl">Bridget Krull</h4>
             <div>Product Manager</div>
           </div>
@@ -76,7 +83,7 @@
     </section>
 
     <section class="featured-work">
-      <h3 class="text-6xl text-colorPrimary font-display mb-16">Latest Projects</h3>
+      <h3 class="text-6xl text-colorPrimary font-display mb-6">Latest Projects</h3>
       <div v-for="edge in $page.work.edges" :key="edge.node.id">
         <g-link :to='edge.node.path'>
           <Project :title="edge.node.title" :subtitle="edge.node.subtitle" />
@@ -163,6 +170,9 @@ import MCSaatchi from '~/assets/svgs/mc-saatchi.svg?inline'
 import FCC from '~/assets/svgs/future-cities-catapult.svg?inline'
 import EEMS from '~/assets/svgs/eems.svg?inline'
 import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
+import Doodle1 from '~/assets/svgs/doodle-1.svg?inline'
+import Doodle2 from '~/assets/svgs/doodle-2.svg?inline'
+import Doodle3 from '~/assets/svgs/doodle-3.svg?inline'
 import Project from '~/components/Project.vue'
 // import Quote from '~/assets/svgs/quote.svg'
 import { store } from '~/main'
@@ -174,13 +184,13 @@ export default {
     title: 'Hello, world!'
   },
   created() {
-    if(localStorage.getItem('name'))
+    if(sessionStorage.getItem('name'))
       this.hasName = true
   },
   data() {
     return {
       hasName: false,
-      name: localStorage.getItem('name')
+      name: sessionStorage.getItem('name')
     }
   },
   components: {
@@ -193,7 +203,10 @@ export default {
     FCC,
     EEMS,
     ArrowRight,
-    Project
+    Project,
+    Doodle1,
+    Doodle2,
+    Doodle3
   }
 }
 </script>

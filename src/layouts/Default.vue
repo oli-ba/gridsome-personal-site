@@ -52,7 +52,7 @@ export default {
 svg.colorSecondary path {fill: theme('colors.colorSecondary')}
 /* section {@apply px-6 xl:px-16 py-16;} */
 section, .section, header, footer div {
-  @apply px-6 py-16;
+  @apply px-6 py-8;
   @screen md {
     @apply px-16;
   }
