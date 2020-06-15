@@ -3,6 +3,9 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import VueClipboard from 'vue-clipboard2';
+
+require('typeface-libre-baskerville')
+require('typeface-kalam')
 // import Vuex from 'vuex'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
@@ -22,10 +25,10 @@ export default function (Vue, { router, head, isClient, appOptions }) {
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Kulim+Park:400,600|Libre+Baskerville:400&display=swap'
-  })
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   href: 'https://fonts.googleapis.com/css?family=Kulim+Park:400,600|Libre+Baskerville:400&display=swap'
+  // })
 
   Vue.filter('formatDate', function (date) {
     if (!date) return 'Not a valid date'
