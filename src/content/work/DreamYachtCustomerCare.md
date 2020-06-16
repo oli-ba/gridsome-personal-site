@@ -32,7 +32,3 @@ Exercitation aliqua tempor amet occaecat incididunt elit amet. Duis reprehenderi
 Fugiat labore dolore est dolore nulla est et sit. Velit fugiat adipisicing sunt qui sint aliquip mollit excepteur et aute. Duis in reprehenderit fugiat officia laborum esse deserunt veniam nostrud.
 
 <g-image src="http://placehold.it/800x900" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
-
-<style scoped>
-  h3 {@apply sticky top-0 bg-colorSecondary}
-</style>

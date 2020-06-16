@@ -80,6 +80,6 @@ li {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    /* height: calc(100vh - 4rem); */
+    height: 225px;
   }
 </style>

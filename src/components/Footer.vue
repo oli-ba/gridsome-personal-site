@@ -6,15 +6,18 @@
     <div class="w-full md:w-1/3 order-first md:order-last p-4">
       <ul class="flex justify-between text-sm">
         <li>
-          <button
-            v-clipboard:copy="copyEmail"
-            v-clipboard:success="onCopy"
-            v-clipboard:error="onError"
-            title="Copy my email address"
-          >
-            <IconEmail />Email Me
-          </button>
-          <div v-if="hasCopied" class="text-xs absolute m-auto fade-in-out">{{message}}</div>
+          <div class="relative p-0">
+            <button
+              v-clipboard:copy="copyEmail"
+              v-clipboard:success="onCopy"
+              v-clipboard:error="onError"
+              title="Copy my email address"
+            >
+              <IconEmail />
+              Email Me
+            </button>
+            <span v-if="hasCopied" class="text-xs absolute left-0 m-auto fade-in-out" style="width: 15rem; bottom: -15px">{{message}}</span>
+          </div>
           <!-- <p class="text-xs" v-if="onCopy === true">Address copied to clipboard</p> -->
           <!-- <p v-if="onError === true">Copied!</p> -->
         </li>
@@ -83,7 +86,7 @@ export default {
   methods: {
     onCopy: function (e) {
       // console.log('You just copied: ' + e.text)
-    this.message = 'Email address copied to clipboard'
+    this.message = 'Copied to clipboard'
       this.hasCopied = true
     },
     onError: function (e) {

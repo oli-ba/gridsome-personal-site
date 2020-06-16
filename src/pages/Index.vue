@@ -1,13 +1,13 @@
 <template>
   <Layout class="bg-colorSecondary">
-    <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-screen">
+    <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
       <div class="md:w-2/3 md:pt-24">
         <h2 v-if="hasName == true" class="font-display mb-6">
           Hello {{name}}! <br>
           I'm Oli, UI/UX specialist.
         </h2>
         <h2 v-else class="font-display leading-tight mb-6">
-          UI/UX Specialist
+          London based UI/UX facilitator &amp; developer
         </h2>
         <p class="font-body text-xl mb-4">I help companies big and small create timeless digital touchpoints.
         The result: delightful experiences that leave a lasting impression.</p>
@@ -17,7 +17,7 @@
           <ArrowRight class="ml-4"/>
         </g-link>
       </div>
-      <div class="lead h-full"></div>
+      <div class="lead"></div>
     </section>
     <section class="clients bg-colorPrimary text-colorSecondary py-32">
       <h3 class="text-xl text-center font-display mb-4">Previously At</h3>
@@ -34,7 +34,7 @@
     </section>
 
     <section class="text-colorPrimary text-center py-32">
-      <h3 class="text-4xl font-display mb-6">Why invest in good UX</h3>
+      <h3 class="text-4xl font-display mb-12">Why invest in good UX?</h3>
       <div class="reasons">
         <div class="mb-12">
           <Doodle1 class="colorPrimary mb-6 m-auto"/>
