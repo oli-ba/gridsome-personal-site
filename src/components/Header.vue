@@ -1,6 +1,6 @@
 <template>
   <header class="flex flex-col /*sticky top-0*/ z-50 md:flex-row justify-between items-start md:items-center bg-colorPrimary text-colorSecondary w-screen py-3 shadow-md">
-    <h1 class="text-4xl font-display">
+    <h1 class="text-4xl font-display tracking-wide">
       <g-link to="/">{{ $static.metadata.siteName }}</g-link>
     </h1>
     <nav class="flex justify-between md:justify-around w-full md:w-1/2">

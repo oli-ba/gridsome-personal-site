@@ -2,11 +2,11 @@
   <Layout class="bg-colorSecondary">
     <section class="hero text-colorPrimary flex flex-col justify-center h-screen">
       <div class="md:w-3/5">
-        <h2 v-if="hasName == true" class="font-display mb-6">
+        <h2 v-if="hasName == true" class="font-display leading-tight mb-6">
           Glad you're curious {{name}}.<br>
           Here's how I can help out.
         </h2>
-        <h2 v-else class="font-display mb-6">
+        <h2 v-else class="font-display leading-tight mb-6">
           How I can help&nbsp;out
         </h2>
         <p class="font-body text-xl mb-4">I help companies big and small create timeless digital touchpoints.
