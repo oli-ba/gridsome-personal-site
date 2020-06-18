@@ -2,19 +2,19 @@
 title: Dream Yacht Charter
 subtitle: Making Yacht Sailing a Breeze
 featured: true
+timeline: Feburary 2019 - March 2020
+team: US General Manager, Global Marketing Manager, Digital Lead, Lead Developer, Project Manager, External SEO Agency
+overview: >
+  Part of the Dream Yacht Group, Dream Yacht Charter is the world's leading ocean tourism company with a fleet of 1,250+ yachts scattered across 60+ destinations around the globe. The company was experiencing a growth spurt pre COVID-19 that was outpacing its ability to carefully consider design and  user experience. With a leaking Wordpress template that was dated and not exactly fit for purpose, I was tasked with steering the redesign of the Dream Yacht Groups flagship product.
+overviewImage: ../../assets/images/projects/DYC/DYC-Homepage-Redesign.png
 ---
-### Overview
-DYC is the world's leading ocean tourism company. The company's growth is outpacing its ability to carefully consider design and more importantly it’s user experience.
-
-With many scooped up companies under its umbrella, many of their sites  suffer from a lack of brand consistency and systematic approach to design.
-
 ### The Problem
-The company wants to attract more non-sailors to experience the joy of sailing. However it’s traditionally intimidating for someone (without some prior knowledge of sailing) to charter a boat, let alone knowing where to sail.
+The company wants to attract more non-sailors to experience the joy of sailing. However it’s traditionally intimidating for someone (without some prior knowledge of sailing) to charter a boat, let alone knowing where to sail. Coupled with an ever growing list of destinations and charter types, making a decision where and what to book can be difficult.
 
-**How might we make it simpler for novices to charter a yacht while not alienating seasoned sailors?**
+**So how might we make it simpler for novices to charter a yacht while not alienating seasoned sailors?**
 
 ### The Goal
-Setting out a basic strategy whereby hand-holding novice users (adventurers) through their onsite journey while giving traditional users (sailors) the power to quickly search for what they are looking for.
+Leading and informing novice users (adventurers) through their onsite journey while giving traditional users (sailors) the power to quickly search for what they are looking for.
 
 **In addition we were looking to:**
 - Increasing online bookings *(particularly across Crewed and By-the-cabin Charters)*
@@ -22,9 +22,9 @@ Setting out a basic strategy whereby hand-holding novice users (adventurers) thr
 - Reducing the amount of questions DYC get from prospective customers
 
 ### Scope of Work
-- Qualitative and quantitative user research
+- Qualitative and Quantitative User Research
 - Information Architecture
-- User Journey Mapping
+- User Flow Mapping
 - Wireframing
 - Prototyping
 - Mockups

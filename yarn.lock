@@ -9508,10 +9508,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-kalam@^0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-kalam/-/typeface-kalam-0.0.72.tgz#48bba216ac1455106810a6d30876b63ba8002280"
-  integrity sha512-Crh+J9ibN9e5TraZ2f1mvVTHBnkNIb7vL1waDHcTwZbByHzYeef10h8CGFtcZkGHdO96vj2VoMwMaAHZR6aDTA==
+typeface-kulim-park@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/typeface-kulim-park/-/typeface-kulim-park-1.1.3.tgz#329375e31570b67d50600846bb6d20c8747edda6"
+  integrity sha512-StZNrUsKovjinAfDOFuR8RKcK2NVou+892algo7HmIy7P61WA+BdjB1XOXmHJd4fSf5kAR/4TrSHNKFXaCh8WA==
 
 typeface-libre-baskerville@^0.0.72:
   version "0.0.72"

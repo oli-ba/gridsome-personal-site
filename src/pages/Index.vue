@@ -2,7 +2,7 @@
   <Layout class="bg-colorSecondary">
     <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
       <div class="md:w-2/3 md:pt-24">
-        <h2 v-if="hasName == true" class="font-display mb-6">
+        <h2 v-if="hasName == true" class="font-display leading-tight mb-6">
           Hello {{name}}! <br>
           I'm Oli, UI/UX specialist.
         </h2>
@@ -16,6 +16,7 @@
           See how I can help 
           <ArrowRight class="ml-4"/>
         </g-link>
+        
       </div>
       <div class="lead"></div>
     </section>
@@ -34,7 +35,8 @@
     </section>
 
     <section class="text-colorPrimary text-center py-32">
-      <h3 class="text-4xl font-display mb-12">Why invest in good UX?</h3>
+      <!-- <h3 class="text-4xl font-display mb-12">Why invest in good UX?</h3> -->
+      <h3 class="text-6xl text-colorPrimary font-display mb-6">Why invest in good UX?</h3>
       <div class="reasons">
         <div class="mb-12">
           <Doodle1 class="colorPrimary mb-6 m-auto"/>
@@ -54,35 +56,38 @@
       </div>
     </section>
 
-    <section class="testimonial text-colorPrimary">
-      <h3 class="text-4xl font-display mb-6">Testimonials</h3>
-      <div class="flex-col md:w-3/5 mb-16">
-        <p class="italic border-l-8 px-4 border-colorPrimary">I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion and the professional and swift delivery of any project we worked on have been consistently outstanding. <!--Besides, Olivier is joy to work with; always friendly and interested in keeping abreast on the latest online and design developments. I happily recommend Olivier.--></p>
-        <div class="flex flex-row">
-          <div>
-            <g-image src="~/assets/images/cornel_lazar.jpg" alt="A picture of Cornel Lazar" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
-          </div>
-          <div class="px-4">
-            <h4 class="text-xl">Cornel Lazar</h4>
-            <div>Marketing Director</div>
-          </div>
-        </div>
-      </div>
-      <div class="flex-col md:w-3/5">
-        <p class="italic border-l-8 px-4 border-colorPrimary"><!--I have worked with Olivier on a variety of projects over the past few years and have always been incredibly pleased with his work. His work on the redesign of one of our web products brought new life and ease of use to a critical tool for a client in Ireland. Olivier also delivered our responsive email templates for use during the Rugby World Cup, including a particular email which was highly sensitive and complex.--> His work is always outstanding, on point for the project brief, and delivered with integrity and professionalism. I cannot recommend Olivier enough!</p>
-        <div class="flex flex-row">
-          <div>
-            <g-image src="~/assets/images/bridget_krull.jpg" alt="A picture of Bridget Krull" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
-          </div>
-          <div class="px-4">
-            <h4 class="text-xl">Bridget Krull</h4>
-            <div>Product Manager</div>
+    <section class="testimonial bg-colorPrimary text-colorSecondary">
+      <!-- <h3 class="text-4xl font-display mb-6 text-center">Testimonials</h3> -->
+      <h3 class="hidden">Testimonials</h3>
+      <div class="flex ">
+        <div class="flex-col px-6 md:px-40 py-32">
+          <p class="quote border-colorPrimary font-sans font-bold text-xl md:text-4xl leading-tight">I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion and the professional and swift delivery of any project we worked on have been consistently outstanding.</p>
+          <div class="flex flex-row">
+            <div>
+              <g-image src="~/assets/images/cornel_lazar.jpg" alt="A picture of Cornel Lazar" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
+            </div>
+            <div class="px-4">
+              <h4 class="text-xl">Cornel Lazar</h4>
+              <div class="uppercase tracking-wide">Marketing Director</div>
+            </div>
           </div>
         </div>
+        <!-- <div class="flex-col md:w-1/2 md:px-8">
+          <p class="italic border-l-8 px-4 border-colorPrimary">I have worked with Olivier on a variety of projects over the past few years and have always been incredibly pleased with his work. His work on the redesign of one of our web products brought new life and ease of use to a critical tool for a client in Ireland. Olivier also delivered our responsive email templates for use during the Rugby World Cup, including a particular email which was highly sensitive and complex. "His work is always outstanding, on point for the project brief, and delivered with integrity and professionalism. I cannot recommend Olivier enough!"</p>
+          <div class="flex flex-row">
+            <div>
+              <g-image src="~/assets/images/bridget_krull.jpg" alt="A picture of Bridget Krull" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
+            </div>
+            <div class="px-4">
+              <h4 class="text-xl">Bridget Krull</h4>
+              <div class="uppercase tracking-wide">Product Manager</div>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
 
-    <section class="featured-work">
+    <section class="featured-work py-32">
       <h3 class="text-6xl text-colorPrimary font-display mb-6">Latest Projects</h3>
       <div v-for="edge in $page.work.edges" :key="edge.node.id">
         <g-link :to='edge.node.path'>
@@ -107,25 +112,26 @@
     opacity: 1;
     transition: opacity 0.25s ease-in;
   }
-  .reasons {
-    @apply flex flex-col;
-    @screen md {@apply flex-row}
-    & h4 {
-      @apply text-2xl font-bold;
-      }
-    & div {
-      @apply pr-4;
-      @screen md {@apply w-4/12}
-      }
+  .quote {
+    &::before {
+      content: '"';
+      margin-left: -0.45rem;
     }
-  .testimonial {
-    &__quote {
-      @apply flex;
-
-      & p {
-        @apply w-6/12;}
+    &::after {
+      content: '"';
+      margin-left: -0.05rem;
     }
   }
+  .reasons {
+    @apply flex flex-col
+    @screen md { @apply flex-row }
+    & h4 { @apply text-2xl font-bold }
+    & div {
+        @apply pr-4
+        @screen md {@apply w-4/12}
+      }
+    }
+    
   /* a:hover {
     border-bottom: none;
 
@@ -178,7 +184,6 @@ import Project from '~/components/Project.vue'
 import { store } from '~/main'
 
 // localStorage.setItem('name', this.$route.query.hello)
-
 export default {
   metaInfo: {
     title: 'Hello, world!'

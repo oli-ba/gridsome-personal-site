@@ -7,9 +7,8 @@
             Hello World,
           </h2>
           <p class="font-body text-xl mb-4">
-            Sint cillum veniam enim labore quis occaecat ad consequat duis. Anim sint veniam dolor excepteur labore cillum in reprehenderit. Ea nostrud excepteur amet dolor dolore id velit culpa anim eiusmod aliqua amet. Quis amet id ad aliquip veniam aliqua deserunt est eiusmod et esse excepteur et aute. Mollit incididunt sint aliquip aute do aliquip magna in labore esse magna. Aliquip laboris cillum mollit fugiat ad tempor laborum.
+            I’ll never forget the day my father showed me how to dial into his company’s server. I sat in amazement as a 14.4k baud modem screeched at something on the other end, I didn’t know what the hell it was, but I knew I liked it. I watched him type in commands on a telnet client to see who else in the company may have the same sure name. I just remember having an overwhelming feeling of ‘this is the shit!’. At a young age I was hogging the phone line while dabbling in chatrooms, making pages on Geocities and pimping out my Myspace page with CSS.
           </p>
-          <p class="font-body text-xl mb-8">Want to change direction, change behaviour, or change the world?</p>
           <g-link to="/hire-me/" class="cta flex items-center text-lg mb-12">
             Hire me 
             <ArrowRight class="ml-4"/>

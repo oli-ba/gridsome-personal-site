@@ -2,7 +2,7 @@
   <Layout class="bg-colorSecondary">
     <section class="hero text-colorPrimary flex flex-col justify-center pb-0">
       <div class="md:w-3/5">
-        <h3 v-if="hasName == true" class="font-display leading-none mb-6">
+        <h3 v-if="hasName == true" class="font-display leading-tight mb-6">
           {{name}}, seen enough? Let's work together
         </h3>
         <h2 v-else class="font-display leading-none mb-6">
