@@ -4,13 +4,16 @@
       <div class="flex flex-col md:flex-row">
         <div class="md:w-3/5">
           <h2 class="font-display leading-none mb-6">
-            Hello World,
+            Jack-of-all-trades, master-of-most
+          </h2>
+          <h2 class="font-body text-2xl md:text-3xl mb-4">
+            I'm like that handy Swiss Army Knife, because even though it's useful for a wide variety of work, it spends most of its time just opening bottles.
           </h2>
           <p class="font-body text-xl mb-4">
             I’ll never forget the day my father showed me how to dial into his company’s server. I sat in amazement as a 14.4k baud modem screeched at something on the other end, I didn’t know what the hell it was, but I knew I liked it. I watched him type in commands on a telnet client to see who else in the company may have the same sure name. I just remember having an overwhelming feeling of ‘this is the shit!’. At a young age I was hogging the phone line while dabbling in chatrooms, making pages on Geocities and pimping out my Myspace page with CSS.
           </p>
           <g-link to="/hire-me/" class="cta flex items-center text-lg mb-12">
-            Hire me 
+            Let's work together  
             <ArrowRight class="ml-4"/>
           </g-link>
         </div>
@@ -20,13 +23,14 @@
       </div>
       <div class="lead h-48"></div>
     </section>
-    <section class="hero bg-colorPrimary text-colorSecondary flex flex-col justify-center">
+    <section class="hero bg-colorPrimary text-colorSecondary flex flex-col justify-center py-32">
       <h2 class="font-display leading-tight text-4xl mb-12">Previous Experience</h2>
-      
-      <div class="experience flex flex-col mb-6 pl-2" v-for="job in jobs" :key="job.id">
-        <h3 class="order-2">{{job.client}}</h3>
-        <h6 class="order-1 text-sm">{{job.period}}</h6>
-        <h6 class="order-3 text-sm">{{job.role}}</h6>
+      <div class="flex flex-row flex-wrap">
+        <div class="experience flex flex-col mb-6 pl-2 md:w-1/3" v-for="job in jobs" :key="job.id">
+          <h3 class="order-2">{{job.client}}</h3>
+          <h6 class="order-1 text-sm">{{job.period}}</h6>
+          <h6 class="order-3 text-sm">{{job.role}}</h6>
+        </div>
       </div>
     </section>
 

@@ -1,100 +1,11 @@
 <template>
   <Layout class="bg-colorSecondary">
-    <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
-      <div class="md:w-2/3 md:pt-24">
-        <h2 v-if="hasName == true" class="font-display leading-tight mb-6">
-          Hello {{name}}! <br>
-          I'm Oli, UI/UX specialist.
-        </h2>
-        <h2 v-else class="font-display leading-tight mb-6">
-          London based UI/UX facilitator &amp; developer
-        </h2>
-        <p class="font-body text-xl mb-4">I help companies big and small create timeless digital touchpoints.
-        The result: delightful experiences that leave a lasting impression.</p>
-        <p class="font-body text-xl mb-8">Want to change direction, change behaviour, or change the world?</p>
-        <g-link to="/services/" class="cta flex items-center text-lg mb-12">
-          See how I can help 
-          <ArrowRight class="ml-4"/>
-        </g-link>
-        
-      </div>
-      <div class="lead"></div>
-    </section>
-    <section class="clients bg-colorPrimary text-colorSecondary py-32">
-      <h3 class="text-xl text-center font-display mb-4">Previously At</h3>
-      <div class="flex flex-wrap items-stretch justify-center">
-        <DYC class="colorSecondary"/>
-        <VibePay class="colorSecondary"/>
-        <Burberry class="colorSecondary"/>
-        <Ticketmaster class="colorSecondary"/>
-        <Deliveroo class="colorSecondary"/>
-        <MCSaatchi class="colorSecondary"/>
-        <FCC class="colorSecondary"/>
-        <EEMS class="colorSecondary"/>
-      </div>
-    </section>
+    <Hero />
+    <PreviousClients />
+    <Services />
+    <Testimonial />
+    <LatestWork />
 
-    <section class="text-colorPrimary text-center py-32">
-      <!-- <h3 class="text-4xl font-display mb-12">Why invest in good UX?</h3> -->
-      <h3 class="text-6xl text-colorPrimary font-display mb-6">Why invest in good UX?</h3>
-      <div class="reasons">
-        <div class="mb-12">
-          <Doodle1 class="colorPrimary mb-6 m-auto"/>
-          <h4>Differentiate your product</h4>
-          <p>In a noisy digital world, setting your product apart from the crowd can be difficult.</p>
-        </div>
-        <div class="mb-12">
-          <Doodle2 class="colorPrimary mb-6 m-auto"/>
-          <h4>Future-proof your product</h4>
-          <p>UX is important because it aims to fulfil your user’s needs.</p>
-        </div>
-        <div class="mb-12">
-          <Doodle3 class="colorPrimary mb-6 m-auto"/>
-          <h4>Delight your users</h4>
-          <p>If you keep them happy, they'll keep coming back.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonial bg-colorPrimary text-colorSecondary">
-      <!-- <h3 class="text-4xl font-display mb-6 text-center">Testimonials</h3> -->
-      <h3 class="hidden">Testimonials</h3>
-      <div class="flex ">
-        <div class="flex-col px-6 md:px-40 py-32">
-          <p class="quote border-colorPrimary font-sans font-bold text-xl md:text-4xl leading-tight">I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion and the professional and swift delivery of any project we worked on have been consistently outstanding.</p>
-          <div class="flex flex-row">
-            <div>
-              <g-image src="~/assets/images/cornel_lazar.jpg" alt="A picture of Cornel Lazar" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
-            </div>
-            <div class="px-4">
-              <h4 class="text-xl">Cornel Lazar</h4>
-              <div class="uppercase tracking-wide">Marketing Director</div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="flex-col md:w-1/2 md:px-8">
-          <p class="italic border-l-8 px-4 border-colorPrimary">I have worked with Olivier on a variety of projects over the past few years and have always been incredibly pleased with his work. His work on the redesign of one of our web products brought new life and ease of use to a critical tool for a client in Ireland. Olivier also delivered our responsive email templates for use during the Rugby World Cup, including a particular email which was highly sensitive and complex. "His work is always outstanding, on point for the project brief, and delivered with integrity and professionalism. I cannot recommend Olivier enough!"</p>
-          <div class="flex flex-row">
-            <div>
-              <g-image src="~/assets/images/bridget_krull.jpg" alt="A picture of Bridget Krull" quality="100" width="48" height="48" fit="contain" class="rounded-full"></g-image>
-            </div>
-            <div class="px-4">
-              <h4 class="text-xl">Bridget Krull</h4>
-              <div class="uppercase tracking-wide">Product Manager</div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </section>
-
-    <section class="featured-work py-32">
-      <h3 class="text-6xl text-colorPrimary font-display mb-6">Latest Projects</h3>
-      <div v-for="edge in $page.work.edges" :key="edge.node.id">
-        <g-link :to='edge.node.path'>
-          <Project :title="edge.node.title" :subtitle="edge.node.subtitle" />
-        </g-link>
-      </div>
-    </section>
     <section class="call-out flex justify-center items-center py-16 bg-colorPrimary text-right text-colorSecondary text-lg">
       <g-link to="/services/" class="flex items-center">
         See how I can help out
@@ -105,32 +16,6 @@
 </template>
 
 <style lang='scss' scoped>
-  .clients svg {
-    width: 110px;
-    height: 75px;
-    margin: 1rem;
-    opacity: 1;
-    transition: opacity 0.25s ease-in;
-  }
-  .quote {
-    &::before {
-      content: '"';
-      margin-left: -0.45rem;
-    }
-    &::after {
-      content: '"';
-      margin-left: -0.05rem;
-    }
-  }
-  .reasons {
-    @apply flex flex-col
-    @screen md { @apply flex-row }
-    & h4 { @apply text-2xl font-bold }
-    & div {
-        @apply pr-4
-        @screen md {@apply w-4/12}
-      }
-    }
     
   /* a:hover {
     border-bottom: none;
@@ -141,47 +26,20 @@
     background-repeat: repeat-x;
     text-decoration: none;
   } */
-  @screen md {
-    .clients svg {opacity: 0.8;}
-  }
-  .clients svg:hover {opacity: 1;}
+ 
 </style>
 
-<page-query>
-query Work {
-  work:allWork(
-    sortBy: "title", 
-    order: ASC,
-    filter: {featured: {eq: true}}) {
-    edges{
-      node {
-        id
-        title
-        subtitle
-        path
-        featured
-      }
-    }
-  }
-}
-</page-query>
+
 
 <script>
-import DYC from '~/assets/svgs/dream-yacht-charter.svg?inline'
-import VibePay from '~/assets/svgs/vibe-pay.svg?inline'
-import Burberry from '~/assets/svgs/burberry.svg?inline'
-import Ticketmaster from '~/assets/svgs/ticketmaster.svg?inline'
-import Deliveroo from '~/assets/svgs/deliveroo.svg?inline'
-import MCSaatchi from '~/assets/svgs/mc-saatchi.svg?inline'
-import FCC from '~/assets/svgs/future-cities-catapult.svg?inline'
-import EEMS from '~/assets/svgs/eems.svg?inline'
 import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
-import Doodle1 from '~/assets/svgs/doodle-1.svg?inline'
-import Doodle2 from '~/assets/svgs/doodle-2.svg?inline'
-import Doodle3 from '~/assets/svgs/doodle-3.svg?inline'
-import Project from '~/components/Project.vue'
+import Hero from '~/components/Hero.vue'
+import PreviousClients from '~/components/PreviousClients.vue'
+import Services from '~/components/Services.vue'
+import Testimonial from '~/components/Testimonial.vue'
+import LatestWork from '~/components/LatestWork.vue'
 // import Quote from '~/assets/svgs/quote.svg'
-import { store } from '~/main'
+// import { store } from '~/main'
 
 // localStorage.setItem('name', this.$route.query.hello)
 export default {
@@ -199,19 +57,12 @@ export default {
     }
   },
   components: {
-    DYC,
-    VibePay,
-    Burberry,
-    Ticketmaster,
-    Deliveroo,
-    MCSaatchi,
-    FCC,
-    EEMS,
-    ArrowRight,
-    Project,
-    Doodle1,
-    Doodle2,
-    Doodle3
+    Hero,
+    PreviousClients,
+    Services,
+    Testimonial,
+    LatestWork,
+    ArrowRight
   }
 }
 </script>

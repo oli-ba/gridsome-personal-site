@@ -1,12 +1,12 @@
 ---
-title: Dream Yacht Charter
-subtitle: Making Yacht Sailing a Breeze
+client: Dream Yacht Charter
+title: Making Yacht Sailing a Breeze
 featured: true
 timeline: Feburary 2019 - March 2020
 team: US General Manager, Global Marketing Manager, Digital Lead, Lead Developer, Project Manager, External SEO Agency
 overview: >
   Part of the Dream Yacht Group, Dream Yacht Charter is the world's leading ocean tourism company with a fleet of 1,250+ yachts scattered across 60+ destinations around the globe. The company was experiencing a growth spurt pre COVID-19 that was outpacing its ability to carefully consider design and  user experience. With a leaking Wordpress template that was dated and not exactly fit for purpose, I was tasked with steering the redesign of the Dream Yacht Groups flagship product.
-overviewImage: ../../assets/images/projects/DYC/DYC-Homepage-Redesign.png
+overviewImage: ./assets/images/projects/DYC/DYC-Homepage-Redesign.png
 ---
 ### The Problem
 The company wants to attract more non-sailors to experience the joy of sailing. However it’s traditionally intimidating for someone (without some prior knowledge of sailing) to charter a boat, let alone knowing where to sail. Coupled with an ever growing list of destinations and charter types, making a decision where and what to book can be difficult.

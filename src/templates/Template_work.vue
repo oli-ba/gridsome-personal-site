@@ -7,9 +7,9 @@
       </div>
       <div class="md:w-3/5">
         <h2 class="font-display leading-tight mb-4 mt-0">
-          {{ $page.work.subtitle }}
+          {{ $page.work.title }}
         </h2>
-        <p class="font-body text-xl mb-4"><strong>Client:</strong> {{ $page.work.title }}</p>
+        <p class="font-body text-xl mb-4"><strong>Client:</strong> {{ $page.work.client }}</p>
         <p class="font-body text-xl mb-4"><strong>Timeline:</strong> {{ $page.work.timeline }}</p>
         <p class="font-body text-xl mb-4"><strong>Team:</strong> {{ $page.work.team }}</p>
         <p class="font-body text-xl mb-4">{{ $page.work.overview }}</p>
@@ -18,8 +18,8 @@
     </section>
     <section class="p-0 bg-gray-600">
       <div class="flex pt-12 text-gray-200 px-6">
-        <h5 class="w-1/2 text-center">BEFORE</h5>
-        <h5 class="w-1/2 text-center">AFTER</h5>
+        <h5 class="w-1/2 text-center">Original</h5>
+        <h5 class="w-1/2 text-center">Redesign</h5>
       </div>
       <g-image src="@/assets/images/projects/DYC/DYC-Homepage-Redesign.png" quality="75" width="2046" height="4300" fit="contain" class="" alt="DYC Homepage Redesign Overview"></g-image>
     </section>
@@ -53,8 +53,8 @@ article {
 <page-query>
 query Work ($id: ID!) {
   work(id: $id) {
+    client
     title
-    subtitle
     timeline
     team
     overview

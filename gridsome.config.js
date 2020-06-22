@@ -17,7 +17,7 @@ module.exports = {
       options: {
         typeName: 'Work', // Required
         baseDir: './src/content/work', // Where .md files are located
-        pathPrefix: '/work', // Add route prefix. Optional
+        pathPrefix: '/portfolio', // Add route prefix. Optional
         template: './src/templates/Template_work.vue' // Optional
       }
     },

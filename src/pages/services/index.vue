@@ -23,7 +23,7 @@
       <h3 class="text-6xl text-colorPrimary font-display mb-16">Latest Projects</h3>
       <div v-for="edge in $page.work.edges" :key="edge.node.id">
         <g-link :to='edge.node.path'>
-          <Project :title="edge.node.title" :subtitle="edge.node.subtitle" />
+          <Project :title="edge.node.title" :subtitle="edge.node.client" />
         </g-link>
       </div>
     </section>
@@ -40,7 +40,7 @@ query Work {
       node {
         id
         title
-        subtitle
+        client
         path
         featured
       }

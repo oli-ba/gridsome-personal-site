@@ -1,7 +1,12 @@
 ---
-title: Dream Yacht Sales
-subtitle: Your local yacht dealer
+client: Dream Yacht Sales
+title: Shopping for a New Yacht
 featured: true
+timeline: Feburary 2019 - March 2020
+team: Sales Director, Digital Lead, Lead Developer, Project Manager, External SEO Agency
+overview: >
+  Part of the Dream Yacht Group, Dream Yacht Charter is the world's leading ocean tourism company with a fleet of 1,250+ yachts scattered across 60+ destinations around the globe. The company was experiencing a growth spurt pre COVID-19 that was outpacing its ability to carefully consider design and  user experience. With a leaking Wordpress template that was dated and not exactly fit for purpose, I was tasked with steering the redesign of the Dream Yacht Groups flagship product.
+overviewImage: assets/images/projects/DYC/DYC-Homepage-Redesign.png
 ---
 ### The Big Picture
 Quis velit et veniam qui est eiusmod id in qui qui tempor magna ipsum occaecat. Deserunt enim magna amet aute elit. Duis consectetur laborum minim voluptate consequat sint velit. Exercitation dolore sint non laborum duis non laboris consequat sit non irure adipisicing officia nostrud. Eu pariatur ea eiusmod Lorem enim excepteur laborum nostrud do. Aliqua laboris nulla sint officia dolore occaecat. Excepteur dolor incididunt eu nulla dolor.

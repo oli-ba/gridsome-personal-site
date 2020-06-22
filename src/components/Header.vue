@@ -1,13 +1,16 @@
 <template>
-  <header class="flex flex-col /*sticky top-0*/ z-50 md:flex-row justify-between items-start md:items-center bg-colorPrimary text-colorSecondary w-screen py-3 shadow-md">
+  <header aria-label="Header" class="flex flex-col md:flex-row justify-between items-start md:items-center bg-colorPrimary text-colorSecondary w-screen py-3 shadow-md">
     <h1 class="text-4xl font-display tracking-wide">
       <g-link to="/">{{ $static.metadata.siteName }}</g-link>
     </h1>
-    <nav class="flex justify-between md:justify-around w-full md:w-1/2">
-      <g-link to="/services/" class="btn">How I can help</g-link>
-      <g-link to="/about/" class="btn">About Me</g-link>
-      <!-- <g-link to="/case-studies/">Work I've done</g-link> -->
-      <g-link to="/hire-me/" class="btn">Hire me</g-link>
+    <nav role="navigation" aria-label="Menu" class="flex flex-grow">
+      <ul class="flex justify-between md:justify-around w-full flex-grow">
+        <li class="hidden"><g-link to="/">Home</g-link></li>
+        <li class="list-none"><g-link to="/services/" class="btn">Services</g-link></li>
+        <li class="list-none"><g-link to="/portfolio/" class="btn">Portfolio</g-link></li>
+        <li class="list-none"><g-link to="/about/" class="btn">About Me</g-link></li>
+        <li class="list-none"><g-link to="/hire-me/" class="btn">Work with me</g-link></li>
+      </ul>
     </nav>
   </header>
 </template>
