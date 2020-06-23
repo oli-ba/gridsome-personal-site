@@ -8,6 +8,7 @@ module.exports = {
   siteName: 'Olivier Balaguer',
   siteUrl: 'https://www.olivierbalaguer.com',
   siteDescription: 'User Interface designer based in London, UK.',
+  resolveAbsolutePaths: true,
   plugins: [
     {use: 'gridsome-plugin-tailwindcss'},
     {use: 'vue-clipboard2'},
@@ -30,5 +31,8 @@ module.exports = {
         template: './src/templates/Template_blog.vue' // Optional
       }
     }
-  ]
+  ],
+  chainWebpack: config => {
+    config.resolve.alias.set('@projects', '@/assets/images/projects')
+  },
 }

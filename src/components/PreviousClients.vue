@@ -47,14 +47,14 @@
 }
 </style>
 <script>
-import DYC from "~/assets/svgs/dream-yacht-charter.svg?inline";
-import VibePay from "~/assets/svgs/vibe-pay.svg?inline";
-import Burberry from "~/assets/svgs/burberry.svg?inline";
-import Ticketmaster from "~/assets/svgs/ticketmaster.svg?inline";
-import Deliveroo from "~/assets/svgs/deliveroo.svg?inline";
-import MCSaatchi from "~/assets/svgs/mc-saatchi.svg?inline";
-import FCC from "~/assets/svgs/future-cities-catapult.svg?inline";
-import EEMS from "~/assets/svgs/eems.svg?inline";
+import DYC from "~/assets/svgs/dream-yacht-charter.svg";
+import VibePay from "~/assets/svgs/vibe-pay.svg";
+import Burberry from "~/assets/svgs/burberry.svg";
+import Ticketmaster from "~/assets/svgs/ticketmaster.svg";
+import Deliveroo from "~/assets/svgs/deliveroo.svg";
+import MCSaatchi from "~/assets/svgs/mc-saatchi.svg";
+import FCC from "~/assets/svgs/future-cities-catapult.svg";
+import EEMS from "~/assets/svgs/eems.svg";
 export default {
   components: {
     DYC,

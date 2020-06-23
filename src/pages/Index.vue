@@ -32,7 +32,7 @@
 
 
 <script>
-import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
+import ArrowRight from '~/assets/svgs/icon-arrow-right.svg'
 import Hero from '~/components/Hero.vue'
 import PreviousClients from '~/components/PreviousClients.vue'
 import Services from '~/components/Services.vue'

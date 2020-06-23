@@ -6,8 +6,20 @@ timeline: Feburary 2019 - March 2020
 team: US General Manager, Global Marketing Manager, Digital Lead, Lead Developer, Project Manager, External SEO Agency
 overview: >
   Part of the Dream Yacht Group, Dream Yacht Charter is the world's leading ocean tourism company with a fleet of 1,250+ yachts scattered across 60+ destinations around the globe. The company was experiencing a growth spurt pre COVID-19 that was outpacing its ability to carefully consider design and  user experience. With a leaking Wordpress template that was dated and not exactly fit for purpose, I was tasked with steering the redesign of the Dream Yacht Groups flagship product.
-overviewImage: ./assets/images/projects/DYC/DYC-Homepage-Redesign.png
+overviewImage: DYC-Homepage-Redesign.png
 ---
+<script>
+  export default {
+    metaInfo: {
+    title: 'Case Study - Making Yacht Sailing a Breeze',
+    meta: [
+      {key: 'description', name: 'description', content: 'Case study for a yacht chartering company redesign'}
+    ]
+  }
+  }
+</script>
+import DYCwireframe from '~/assets/images/projects/DYC-wireframe-flow.svg'
+
 ### The Problem
 The company wants to attract more non-sailors to experience the joy of sailing. However it’s traditionally intimidating for someone (without some prior knowledge of sailing) to charter a boat, let alone knowing where to sail. Coupled with an ever growing list of destinations and charter types, making a decision where and what to book can be difficult.
 
@@ -41,10 +53,10 @@ Adventurous time poor professionals willing to pay a premium for a memorable exp
 
 ### Process
 
-- [Quantitative and qualitative user research](#quantitative--qualitative-user-research)
-- [Competitor research](#competitor-research)
+- Quantitative and qualitative user research
+- Competitor research
 - Site usability, accessibility and heuristics
-- User journey mapping 
+<!-- - User journey mapping  -->
 - Ideation & sketching
 - Wireframes
 - Mockups
@@ -75,9 +87,6 @@ In addition to these findings most sites were lacking in basic proper usage of t
 #### Site usability, accessibility and heuristics
 DYCs site was lacking in basic usability.
 
-#### User journey mapping
-DYCs site was lacking in basic usability
-
 #### Ideation & sketching
 Get some sketches together of homepage, destinations, search, charter types 
 
@@ -86,21 +95,29 @@ Get some sketches together of homepage, destinations, search, charter types
 <g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
 
 #### Wireframes
-Find low-fi mockups 
+Starting off with a mobile-first approach.
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+<DYCwireframe class="bg-gray-600 mt-16" />
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+<!-- <g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image> -->
 
-#### Prototypes
-Invision prototype? See if I can find the Sketch prototype. 
+<!-- #### Prototypes
+Invision prototype? See if I can find the Sketch prototype.  -->
 
 #### UI design
 Screenshots of components
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+<div class="p-0 bg-gray-600">
+  <div class="flex pt-12 text-gray-200 px-2 md:px-8">
+    <h5 class="w-1/2 text-center">Original</h5>
+    <h5 class="w-1/2 text-center">Redesign</h5>
+  </div>
+  <!-- <g-image src="@/assets/images/projects/DYC/DYC-Homepage-Redesign.png" quality="75" width="2046" height="4300" fit="contain" class="" alt="DYC Homepage Redesign Overview"></g-image> -->
+  <g-image :src="require('!!assets-loader!@projects/DYC-crewed-redesign.png')" quality="65" width="2046" height="4300" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview"></g-image>
+</div>
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+### Results
+**TBD**, development was suspended on this due to COVID-19!
 
 ### Lessons Learned
 Sailing and chartering is very nuanced. Gaining knowledge in this domain takes considerable time and effort. It is very difficult to distill complex booking requirements. Business CRM always trumps, it’s difficult to shift business mind. Working remotely with a global team has it’s challenges.
