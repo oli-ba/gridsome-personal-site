@@ -40,9 +40,9 @@ export default {
 
 .cta {
   border: 1px solid theme('colors.colorPrimary');
-  @apply inline-flex p-2 px-4 rounded-full font-bold transition-all;
+  @apply w-full inline-flex items-center justify-center p-2 px-4 rounded-full font-bold transition-all text-center;
+  @screen md{@apply w-auto;}
   &:hover {
-    // border: 1px solid theme('colors.bg-colorPrimary');
     @apply bg-colorPrimary text-colorSecondary shadow-lg transition-all duration-500 ease-in-out;
     border: 1px solid theme('colors.colorPrimary');
 
@@ -50,8 +50,7 @@ export default {
   }
 }
 svg.colorSecondary path {fill: theme('colors.colorSecondary')}
-/* section {@apply px-6 xl:px-16 py-16;} */
-section, .section, header, footer div {
+section, .section, header, footer {
   @apply px-6 py-8;
   @screen md {
     @apply px-16;

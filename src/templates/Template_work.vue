@@ -53,7 +53,6 @@ article {
     @screen md{@apply ml-16;}
   }
   h1 {@apply text-5xl;}
-  .g-image {@apply my-12;}
   h3 {@apply bg-colorSecondary mt-16 mb-4 w-full font-display;}
   h4 {@apply text-2xl font-bold mt-12 mb-2;}
   ul, ol {@apply pl-5;}

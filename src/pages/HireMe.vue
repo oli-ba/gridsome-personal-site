@@ -32,9 +32,14 @@ export default {
   metaInfo: {
     title: 'Get in touch'
   },
+  created() {
+    if(sessionStorage.getItem('name'))
+      this.hasName = true
+  },
   data() {
     return {
-      name: localStorage.getItem('name')
+      hasName: false,
+      name: sessionStorage.getItem('name')
     }
   }
 }

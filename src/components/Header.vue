@@ -3,34 +3,38 @@
     <h1 class="text-4xl font-display tracking-wide">
       <g-link to="/">{{ $static.metadata.siteName }}</g-link>
     </h1>
-    <nav role="navigation" aria-label="Menu" class="flex flex-grow">
-      <ul class="flex justify-between md:justify-around w-full flex-grow">
+    <nav role="navigation" aria-label="Menu" class="flex flex-grow w-full md:w-auto">
+      <ul class="flex justify-evenly md:justify-end w-full flex-grow">
         <li class="hidden"><g-link to="/">Home</g-link></li>
-        <li class="list-none"><g-link to="/services/" class="btn">Services</g-link></li>
-        <li class="list-none"><g-link to="/portfolio/" class="btn">Portfolio</g-link></li>
-        <li class="list-none"><g-link to="/about/" class="btn">About Me</g-link></li>
-        <li class="list-none"><g-link to="/hire-me/" class="btn">Work with me</g-link></li>
+        <li class="list-none md:ml-12">
+          <g-link to="/services/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Services &amp; Portfolio</g-link>
+        </li>
+        <li class="list-none md:ml-12">
+          <g-link to="/about/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">About Me</g-link>
+        </li>
+        <li class="list-none md:ml-12">
+          <g-link to="/hire-me/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Work with me</g-link>
+        </li>
       </ul>
     </nav>
   </header>
 </template>
 
 <style>
-/* header {height: 56px} */
-nav a {position: relative;}
-nav a.active::before {
+nav a:hover:not(.active) {@apply bg-colorSecondary text-colorPrimary;}
+nav a.active {@apply bg-colorSecondary text-colorPrimary;}
+/* nav a.active::before {
   border-bottom: 2px solid theme(color.colorSecondary);
   content: '';
   position: absolute;
   height: 2px;
   width: 100%;
-  /* background-color: theme(color.colorSecondary); */
   bottom: 0;
-}
-nav a.btn-colorSecondary.active {@apply bg-white}
-.btn {@apply text-base}
-.btn-colorPrimary {@apply text-colorSecondary bg-colorPrimary}
-.btn-colorSecondary {@apply text-colorPrimary bg-colorSecondary}
+} */
+nav a.btn-colorSecondary.active {@apply bg-white;}
+.btn {@apply text-base;}
+.btn-colorPrimary {@apply text-colorSecondary bg-colorPrimary;}
+.btn-colorSecondary {@apply text-colorPrimary bg-colorSecondary;}
 </style>
 
 <static-query>

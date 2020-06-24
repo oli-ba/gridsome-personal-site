@@ -1,9 +1,9 @@
 <template>
   <footer
-    class="flex flex-col md:flex-row justify-between items-center bg-colorSecondary text-colorPrimary w-screen py-3"
+    class="flex flex-col md:flex-row justify-between items-center bg-colorSecondary text-colorPrimary w-screen py-3 my-8"
   >
-    <div class="p-4">&copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.</div>
-    <div class="w-full md:w-1/3 order-first md:order-last p-4">
+    <div class="mt-6 md:mt-0">&copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}. Made with <a href="https://gridsome.org/">Gridsome</a> ♥️</div>
+    <div class="w-full md:w-1/3 order-first md:order-last">
       <ul class="flex justify-between text-sm">
         <li>
           <div class="relative p-0">
@@ -31,11 +31,11 @@
             <Github />Github
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href title="Soooo good">
             <Instagram />Instagram
           </a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </footer>

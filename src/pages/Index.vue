@@ -46,16 +46,6 @@ export default {
   metaInfo: {
     title: 'Hello, world!'
   },
-  created() {
-    if(sessionStorage.getItem('name'))
-      this.hasName = true
-  },
-  data() {
-    return {
-      hasName: false,
-      name: sessionStorage.getItem('name')
-    }
-  },
   components: {
     Hero,
     PreviousClients,

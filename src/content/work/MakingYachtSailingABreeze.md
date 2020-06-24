@@ -81,9 +81,13 @@ DYCs site was lacking in basic usability.
 #### Ideation & sketching
 Get some sketches together of homepage, destinations, search, charter types 
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+<div class="flex flex-col md:flex-row">
+<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="md:w-1/3" alt="image description"></g-image>
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="md:w-1/3" alt="image description"></g-image>
+
+<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="md:w-1/3" alt="image description"></g-image>
+</div>
 
 #### Wireframes
 Starting off with a mobile-first approach.
