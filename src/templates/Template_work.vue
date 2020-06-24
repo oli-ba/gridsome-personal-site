@@ -54,7 +54,7 @@ article {
   }
   h1 {@apply text-5xl;}
   .g-image {@apply my-12;}
-  h3 {@apply bg-colorSecondary mt-16 mb-4 w-full;}
+  h3 {@apply bg-colorSecondary mt-16 mb-4 w-full font-display;}
   h4 {@apply text-2xl font-bold mt-12 mb-2;}
   ul, ol {@apply pl-5;}
   li {
@@ -70,6 +70,7 @@ query Work ($id: ID!) {
   work(id: $id) {
     client
     title
+    metaDescription
     timeline
     team
     overview
@@ -79,10 +80,23 @@ query Work ($id: ID!) {
 </page-query>
 
 <script>
-import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
+import ArrowRight from '~/assets/svgs/icon-arrow-right.svg'
 export default {
   components: {
     ArrowRight
+  },
+  metaInfo() {
+    return {
+      title: `${this.$page.work.title} - UX/UI Case Study`,
+      meta: [
+        {key: 'description', name: 'description', content: this.$page.work.metaDescription}
+      ]
+    }
   }
+  // metaInfo() {
+  //   return {
+  //     title: this.$page.work.title,
+  //   }
+  // }
 }
 </script>

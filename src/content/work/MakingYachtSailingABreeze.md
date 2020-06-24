@@ -1,6 +1,7 @@
 ---
 client: Dream Yacht Charter
 title: Making Yacht Sailing a Breeze
+metaDescription: UX study on yacht booking
 featured: true
 timeline: Feburary 2019 - March 2020
 team: US General Manager, Global Marketing Manager, Digital Lead, Lead Developer, Project Manager, External SEO Agency
@@ -8,16 +9,6 @@ overview: >
   Part of the Dream Yacht Group, Dream Yacht Charter is the world's leading ocean tourism company with a fleet of 1,250+ yachts scattered across 60+ destinations around the globe. The company was experiencing a growth spurt pre COVID-19 that was outpacing its ability to carefully consider design and  user experience. With a leaking Wordpress template that was dated and not exactly fit for purpose, I was tasked with steering the redesign of the Dream Yacht Groups flagship product.
 overviewImage: DYC-Homepage-Redesign.png
 ---
-<script>
-  export default {
-    metaInfo: {
-    title: 'Case Study - Making Yacht Sailing a Breeze',
-    meta: [
-      {key: 'description', name: 'description', content: 'Case study for a yacht chartering company redesign'}
-    ]
-  }
-  }
-</script>
 import DYCwireframe from '~/assets/images/projects/DYC-wireframe-flow.svg'
 
 ### The Problem
