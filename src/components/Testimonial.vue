@@ -1,5 +1,5 @@
 <template>
-  <section class="testimonial bg-colorPrimary text-colorSecondary">
+  <section class="testimonial text-colorPrimary">
     <h3 class="hidden">Testimonials</h3>
     <div class="flex flex-col">
       <div class="flex-col px-6 md:px-40 py-32">
@@ -19,7 +19,7 @@
             ></g-image>
           </div>
           <div class="px-4">
-            <h4 class="text-xl">Cornel Lazar</h4>
+            <h4 class="text-xl font-bold"><a href="https://cornellazar.com/">Cornel Lazar</a></h4>
             <div class="uppercase tracking-wide">Marketing Director</div>
           </div>
         </div>
@@ -40,7 +40,7 @@
     </div>
   </section>
 </template>
-<style scoped>
+<style lang="scss">
 .quote {
   &::before {
     content: '"';

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <Header />
+    <!-- <Header /> -->
       <transition name="fade" appear>
         <main>
             <slot />

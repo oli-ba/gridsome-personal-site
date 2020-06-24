@@ -1,8 +1,13 @@
 <template>
   <footer
-    class="flex flex-col md:flex-row justify-between items-center bg-colorSecondary text-colorPrimary w-screen py-3 my-8"
+    class="flex flex-col md:flex-row justify-between items-center text-colorSecondary bg-colorPrimary w-screen py-8"
   >
-    <div class="mt-6 md:mt-0">&copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}. Made with <a href="https://gridsome.org/">Gridsome</a> ♥️</div>
+    <div class="mt-6 md:mt-0">
+      &copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.
+      <span class="block md:inline">
+        Made with <a href="https://gridsome.org/">Gridsome</a> 🤘
+      </span>
+    </div>
     <div class="w-full md:w-1/3 order-first md:order-last">
       <ul class="flex justify-between text-sm">
         <li>
@@ -45,6 +50,7 @@ li { @apply list-none}
 footer svg {
   @apply w-6 h-6 m-auto;
 }
+svg path {stroke: #FFCCD5;}
 .fade-in-out {
   opacity: 0;
   animation: in-out 4s ease;

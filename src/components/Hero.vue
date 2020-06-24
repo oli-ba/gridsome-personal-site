@@ -39,6 +39,6 @@ export default {
       hasName: false,
       name: sessionStorage.getItem('name')
     }
-  },
+  }
 }
 </script>

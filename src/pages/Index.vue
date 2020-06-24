@@ -1,58 +1,108 @@
 <template>
-  <Layout class="bg-colorSecondary">
-    <Hero />
-    <PreviousClients />
-    <Services />
-    <Testimonial />
-    <LatestWork />
-
-    <section class="call-out flex justify-center items-center py-16 bg-colorPrimary text-right text-colorSecondary text-lg">
-      <g-link to="/services/" class="flex items-center">
-        See how I can help out
-        <ArrowRight class="colorSecondary ml-4" />
-      </g-link>
+  <Layout class="bg-colorSecondary border-t-8 border-solid border-colorPrimary">
+    <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
+      <div class="md:w-2/3 md:pt-24">
+        <div v-if="hasName == true" class="text-2xl leading-tight mb-6">
+          Hello {{name}}! I'm Olivier 👋
+        </div>
+        <h2 class="font-display leading-tight mb-6">
+          Remotely based <em>UI/UX</em> facilitator &amp;&nbsp;developer
+        </h2>
+        <p class="font-body text-xl mb-4">
+          I help companies big and small create timeless digital touchpoints.
+          The result: delightful experiences that leave a lasting impression.
+          Want to change direction, change behaviour, or change the world? I can help out.
+        </p>
+        <p class="font-body text-xl mb-4 relative">
+          I'm currently rebuilding off the ol' site. In the meantime feel to get in touch:  
+          <a
+            v-clipboard:copy="copyEmail" 
+            v-clipboard:success="onCopy" 
+            v-clipboard:error="onError" 
+            title="copy my email to your clipboard"
+            class="font-bold cursor-pointer">
+            <span v-if="hasCopied">{{ message }}.</span> 
+            <span v-else>copy my email here.</span> 
+          </a> 
+          Also you can <a href="/static/Olivier-Balaguer-CV-2020.pdf" download class="font-bold">download my CV here</a>
+        </p>
+        <!-- <g-link to="/services/" class="cta flex text-lg mb-12">
+          See how I can help
+          <ArrowRight class="ml-4" />
+        </g-link> -->
+      </div>
+      <div class="lead"></div>
     </section>
+    <PreviousClients />
+    <Testimonial />
+    
   </Layout>
 </template>
+<style>
+.link::before {
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  content: '';
+  position: absolute;
+  /* height: 2px; */
+  width: 100%;
+  bottom: 2px;
+  opacity: .5;
+  display: block;
 
-<style lang='scss' scoped>
-    
-  /* a:hover {
-    border-bottom: none;
-
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: 0 100%;
-    background-size: auto 6px;
-    background-repeat: repeat-x;
-    text-decoration: none;
-  } */
- 
+}
+.fade-in-out {
+  opacity: 0;
+  animation: in-out 3s ease;
+}
+@keyframes in-out {
+  0% {opacity: 0}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
 </style>
-
-
-
 <script>
-import ArrowRight from '~/assets/svgs/icon-arrow-right.svg'
-import Hero from '~/components/Hero.vue'
+import IconCopy from '~/assets/svgs/icon-copy.svg'
 import PreviousClients from '~/components/PreviousClients.vue'
-import Services from '~/components/Services.vue'
 import Testimonial from '~/components/Testimonial.vue'
-import LatestWork from '~/components/LatestWork.vue'
-// import Quote from '~/assets/svgs/quote.svg'
-// import { store } from '~/main'
 
-// localStorage.setItem('name', this.$route.query.hello)
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'UX/UI Designer Based in London'
   },
   components: {
-    Hero,
     PreviousClients,
-    Services,
     Testimonial,
-    LatestWork,
-    ArrowRight
+    IconCopy
+  },
+  beforeCreate() {
+    if(this.$route.query.hello) {
+      sessionStorage.setItem('name', this.$route.query.hello)
+    }
+  },
+  created() {
+    if(sessionStorage.getItem('name'))
+      this.hasName = true
+  },
+  data() {
+    return {
+      hasName: false,
+      name: sessionStorage.getItem('name'),
+      copyEmail: 'oli@olivierbalaguer.com',
+      message: null,
+      hasCopied: false
+    }
+  },
+  methods: {
+    onCopy: function (e) {
+      // console.log('You just copied: ' + e.text)
+    this.message = 'and paste it into your email message 🤯'
+    // this.message = 'email me at oli@olivierbalaguer.com'
+    this.hasCopied = true
+    },
+    onError: function (e) {
+      // console.log('Failed to copy texts')
+      this.message = 'email me at oli@olivierbalaguer.com'
+    }
   }
 }
 </script>
