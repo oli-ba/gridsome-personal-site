@@ -2,9 +2,6 @@
   <Layout class="bg-colorSecondary border-t-8 border-solid border-colorPrimary">
     <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
       <div class="md:w-2/3 md:pt-24">
-        <div v-if="hasName == true" class="text-2xl leading-tight mb-6">
-          Hello {{name}}! I'm Olivier 👋
-        </div>
         <h2 class="font-display leading-tight mb-6">
           Remotely based <em>UI/UX</em> facilitator &amp;&nbsp;developer
         </h2>
@@ -74,19 +71,8 @@ export default {
     Testimonial,
     IconCopy
   },
-  beforeCreate() {
-    if(this.$route.query.hello) {
-      localStorage.setItem('name', this.$route.query.hello)
-    }
-  },
-  created() {
-    if(localStorage.getItem('name'))
-      this.hasName = true
-  },
   data() {
     return {
-      hasName: false,
-      name: localStorage.getItem('name'),
       copyEmail: 'oli@olivierbalaguer.com',
       message: null,
       hasCopied: false
