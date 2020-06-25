@@ -5,14 +5,13 @@ import DefaultLayout from '~/layouts/Default.vue';
 import VueClipboard from 'vue-clipboard2';
 import VueScrollactive from 'vue-scrollactive';
 
-
 require('typeface-libre-baskerville')
 require('typeface-kulim-park')
 // import Vuex from 'vuex'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(VueClipboard)
-  Vue.use(VueScrollactive);
+  Vue.use(VueScrollactive)
   // Vue.use(Vuex)
   
   // appOptions.store = new Vuex.Store({
@@ -21,7 +20,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   //   },
   //   mutations: {
   //     setName (state, name) {
-  //       state.name += name
+  //       state.name = name
   //     }
   //   }
   // })
@@ -32,18 +31,5 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   //   rel: 'stylesheet',
   //   href: 'https://fonts.googleapis.com/css?family=Kulim+Park:400,600|Libre+Baskerville:400&display=swap'
   // })
-
-  Vue.filter('formatDate', function (date) {
-    if (!date) return 'Not a valid date'
-    date = date.toString()
-    // return date.charAt(0).toUpperCase() + date.slice(1)
-
-    // const d = new Date(date)
-    const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(date)
-    const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(date)
-    const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(date)
-
-    return `${da}-${mo}-${ye}`
-  })
   
 }
