@@ -32,7 +32,7 @@
           </a>
         </li>
         <li>
-          <a href title="Inspect my code">
+          <a href="https://github.com/oli-ba" title="Inspect my code">
             <Github />Github
           </a>
         </li>
