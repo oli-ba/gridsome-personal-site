@@ -24,7 +24,7 @@
             <span v-if="hasCopied">{{ message }}.</span> 
             <span v-else>copy my email here.</span> 
           </a> 
-          Also you can <a href="/static/Olivier-Balaguer-CV-2020.pdf" download class="font-bold">download my CV here</a>
+          Also you can <a href="Olivier-Balaguer-CV-2020.pdf" download class="font-bold">download my CV here</a>
         </p>
         <!-- <g-link to="/services/" class="cta flex text-lg mb-12">
           See how I can help
@@ -76,17 +76,17 @@ export default {
   },
   beforeCreate() {
     if(this.$route.query.hello) {
-      sessionStorage.setItem('name', this.$route.query.hello)
+      localStorage.setItem('name', this.$route.query.hello)
     }
   },
   created() {
-    if(sessionStorage.getItem('name'))
+    if(localStorage.getItem('name'))
       this.hasName = true
   },
   data() {
     return {
       hasName: false,
-      name: sessionStorage.getItem('name'),
+      name: localStorage.getItem('name'),
       copyEmail: 'oli@olivierbalaguer.com',
       message: null,
       hasCopied: false
