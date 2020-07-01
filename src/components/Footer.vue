@@ -1,20 +1,28 @@
 <template>
   <footer
-    class="flex flex-col md:flex-row justify-between items-center bg-pink text-pblue w-screen py-3"
+    class="flex flex-col md:flex-row justify-between items-center text-colorSecondary bg-colorPrimary w-screen py-8"
   >
-    <div class="p-4">&copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.</div>
-    <div class="w-full md:w-1/3 order-first md:order-last p-4">
+    <div class="mt-6 md:mt-0">
+      &copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.
+      <span class="block md:inline">
+        Made with <a href="https://gridsome.org/">Gridsome</a> 🤘
+      </span>
+    </div>
+    <div class="w-full md:w-1/3 order-first md:order-last">
       <ul class="flex justify-between text-sm">
         <li>
-          <button
-            v-clipboard:copy="copyEmail"
-            v-clipboard:success="onCopy"
-            v-clipboard:error="onError"
-            title="Copy my email address"
-          >
-            <IconEmail />Email Me
-          </button>
-          <p class="text-xs absolute m-auto fade-in-out">{{message}}</p>
+          <div class="relative p-0">
+            <button
+              v-clipboard:copy="copyEmail"
+              v-clipboard:success="onCopy"
+              v-clipboard:error="onError"
+              title="Copy my email address"
+            >
+              <IconEmail />
+              Copy my email
+            </button>
+            <span v-if="hasCopied" class="text-xs absolute left-0 m-auto fade-in-out" style="width: 15rem; bottom: -15px">{{message}}</span>
+          </div>
           <!-- <p class="text-xs" v-if="onCopy === true">Address copied to clipboard</p> -->
           <!-- <p v-if="onError === true">Copied!</p> -->
         </li>
@@ -24,15 +32,15 @@
           </a>
         </li>
         <li>
-          <a href title="Inspect my code">
+          <a href="https://github.com/oli-ba" title="Inspect my code">
             <Github />Github
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href title="Soooo good">
             <Instagram />Instagram
           </a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </footer>
@@ -42,8 +50,10 @@ li { @apply list-none}
 footer svg {
   @apply w-6 h-6 m-auto;
 }
+svg path {stroke: #FFCCD5;}
 .fade-in-out {
-  animation: in-out 2s ease;
+  opacity: 0;
+  animation: in-out 4s ease;
 }
 @keyframes in-out {
   0% {opacity: 0}
@@ -75,13 +85,15 @@ export default {
   data() {
     return {
       copyEmail: 'oli@olivierbalaguer.com',
-      message: null
+      message: null,
+      hasCopied: false
     }
   },
   methods: {
     onCopy: function (e) {
       // console.log('You just copied: ' + e.text)
-      this.message = 'Copied to clipboard'
+    this.message = 'Copied to clipboard'
+      this.hasCopied = true
     },
     onError: function (e) {
       // console.log('Failed to copy texts')

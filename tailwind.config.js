@@ -18,8 +18,8 @@ module.exports = {
         '9xl': '7rem'
       },
       colors: {
-        pink: '#FFCCD5',
-        pblue: '#2017CC'
+        colorPrimary: '#2017CC',
+        colorSecondary: '#FFCCD5'
       }
     }
   },
