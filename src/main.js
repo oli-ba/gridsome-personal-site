@@ -3,7 +3,6 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import VueClipboard from 'vue-clipboard2';
-import VueScrollactive from 'vue-scrollactive';
 
 require('typeface-libre-baskerville')
 require('typeface-kulim-park')
@@ -11,7 +10,6 @@ require('typeface-kulim-park')
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(VueClipboard)
-  Vue.use(VueScrollactive)
   // Vue.use(Vuex)
   
   // appOptions.store = new Vuex.Store({

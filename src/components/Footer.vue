@@ -19,7 +19,7 @@
               title="Copy my email address"
             >
               <IconEmail />
-              Email Me
+              Copy my email
             </button>
             <span v-if="hasCopied" class="text-xs absolute left-0 m-auto fade-in-out" style="width: 15rem; bottom: -15px">{{message}}</span>
           </div>
