@@ -13,7 +13,7 @@
           Want to change direction, change behaviour, or change the world? I can help out.
         </p>
         <p class="font-body text-xl mb-12 relative">
-          I'm currently refreshing the ol' site and adding new work. If you're looking for my CV, you can <a href="Olivier-Balaguer-CV-2020.pdf" download class="font-bold underline">download it here</a>. If you would like to connect you can <a href="https://www.linkedin.com/in/olivierbalaguer" class="font-bold cursor-pointer underline">find me on LinkedIn</a>, or you can <a
+          I'm currently refreshing the ol' site and adding new work. If you're looking for my CV, you can <a href="./pdfs/Olivier-Balaguer-CV-2020.pdf" download class="font-bold underline">download it here</a>. If you would like to connect you can <a href="https://www.linkedin.com/in/olivierbalaguer" class="font-bold cursor-pointer underline">find me on LinkedIn</a>, or you can <a
             v-clipboard:copy="copyEmail"
             v-clipboard:success="onCopy"
             v-clipboard:error="onError"
@@ -55,13 +55,12 @@
 }
 </style>
 <script>
-import IconCopy from "~/assets/svgs/icon-copy.svg";
 import PreviousClients from "~/components/PreviousClients.vue";
 import Testimonial from "~/components/Testimonial.vue";
 
 export default {
   metaInfo: {
-    title: "Remote UI/UX Facilitator & Developer Based in London",
+    title: "Remote UI/UX Facilitator & Developer Based in London, UK",
     link: [
       {
         rel: "canonical",
@@ -101,8 +100,7 @@ export default {
   },
   components: {
     PreviousClients,
-    Testimonial,
-    IconCopy
+    Testimonial
   },
   beforeCreate() {
     // this.$store.commit('setName', this.$route.query.hello)
