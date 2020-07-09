@@ -1,0 +1,6 @@
+# Allow crawling of all content
+User-agent: *
+Disallow: /pdfs
+Disallow: /videos
+Disallow: /404
+Disallow: /assets
