@@ -6,22 +6,24 @@
         <blockquote
           class="quote border-colorPrimary font-sans font-bold text-xl md:text-4xl leading-tight mb-12"
         >I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion, professional and swift delivery of any project we worked on have been consistently outstanding.</blockquote>
-        <div class="flex flex-row">
-          <div>
-            <g-image
-              src="~/assets/images/cornel_lazar.jpg"
-              alt="A picture of Cornel Lazar"
-              quality="100"
-              width="48"
-              height="48"
-              fit="contain"
-              class="rounded-full"
-            ></g-image>
-          </div>
-          <div class="px-4">
-            <h4 class="text-xl font-bold"><a href="https://cornellazar.com/">Cornel Lazar</a></h4>
-            <div class="uppercase tracking-wide">Marketing Director</div>
-          </div>
+        <div>
+          <a href="https://cornellazar.com/" class="flex flex-row" title="Visit Cornel">
+            <div>
+              <g-image
+                src="~/assets/images/cornel_lazar.jpg"
+                alt="A picture of Cornel Lazar"
+                quality="100"
+                width="48"
+                height="48"
+                fit="contain"
+                class="rounded-full"
+              ></g-image>
+            </div>
+            <div class="px-4">
+              <h4 class="text-xl font-bold">Cornel Lazar</h4>
+              <div class="uppercase tracking-wide">Growth &amp; Brand</div>
+            </div>
+          </a>
         </div>
       </div>
       <!-- <div class="h-1 bg-colorSecondary mx-48 my-16"></div> -->
