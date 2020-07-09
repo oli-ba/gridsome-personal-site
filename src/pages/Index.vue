@@ -62,7 +62,7 @@ import Testimonial from "~/components/Testimonial.vue";
 
 export default {
   metaInfo: {
-    title: "UX/UI Designer Based in London | Olivier Balaguer",
+    title: "UX/UI Designer Based in London ",
     link: [
       {
         rel: "canonical",
