@@ -1,18 +1,18 @@
 <template>
   <Layout class="bg-colorSecondary">
-    <Header />
+    <!-- <Header v-show="hasName == false" /> -->
     <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
       <div class="md:pt-24 md:w-4/5">
+        <p class="font-bold">&mdash; Hello <span v-show="hasName == true">{{name}},</span> I'm Oli. </p>
         <h1 class="font-display leading-tight mb-6">
-          Remotely based
-          UI/UX facilitator &amp;&nbsp;developer
+          Remote UI/UX facilitator
         </h1>
-        <p class="font-body text-xl mb-4 lg:w-65ch md:w-full">
-          <span v-show="hasName == true">Hello {{name}} 👋, I'm Olivier. </span>I help companies big and small create meaningful digital touchpoints.
-          The result? Delightful experiences that leave a lasting impression.
-          Want to change direction, change behaviour, or change the world? I can help out.
+        <p class="font-body text-xl mb-4 lg:w-55ch md:w-full">
+          Maker of meaningful digital touchpoints. Want to change direction, change behaviour, or change the world? <span v-show="hasName == true">Then {{name}},</span> I can help out.
         </p>
-        <p class="font-body text-xl mb-12 relative lg:w-65ch md:w-full">
+        <a href="Olivier-Balaguer-CV-2020.pdf" download class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 md:mr-6">Download my CV</a>
+        <a href="https://www.linkedin.com/in/olivierbalaguer" class="cta mt-2 mb-4">Connect on LinkedIn</a>
+        <!-- <p class="font-body text-xl mb-12 relative lg:w-65ch md:w-full">
           I'm currently refreshing the ol' site and adding new work. If you're looking for my CV, <a href="Olivier-Balaguer-CV-2020.pdf" download class="font-bold underline">you can download it here</a>. If you would like to connect you can <a href="https://www.linkedin.com/in/olivierbalaguer" class="font-bold cursor-pointer underline">find me on LinkedIn</a>, or you can <a
             v-clipboard:copy="copyEmail"
             v-clipboard:success="onCopy"
@@ -25,7 +25,7 @@
           </a> and paste into your email message.  
           
           
-        </p>
+        </p> -->
         <!-- <g-link to="/services/" class="cta flex text-lg mb-12">
           See how I can help
           <ArrowRight class="ml-4" />
@@ -62,7 +62,7 @@ import Testimonial from "~/components/Testimonial.vue";
 
 export default {
   metaInfo: {
-    title: "UX/UI Designer Based in London ",
+    title: "Remote UI/UX facilitator & developer based in London",
     link: [
       {
         rel: "canonical",
@@ -110,7 +110,6 @@ export default {
     // this.$store.commit('setName', this.$route.query.hello)
     if (this.$route.query.hello) {
       this.name = this.$route.query.hello;
-      // this.hasName = true
     }
   },
   created() {

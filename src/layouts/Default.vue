@@ -40,7 +40,7 @@ export default {
 
 .cta {
   border: 1px solid theme('colors.colorPrimary');
-  @apply w-full inline-flex items-center justify-center p-2 px-4 rounded-full font-bold transition-all text-center;
+  @apply w-full inline-flex items-center justify-center p-2 px-8 rounded-full font-bold transition-all text-center;
   @screen md{@apply w-auto;}
   &:hover {
     @apply bg-colorPrimary text-colorSecondary shadow-lg transition-all duration-500 ease-in-out;
@@ -51,7 +51,7 @@ export default {
 }
 svg.colorSecondary path {fill: theme('colors.colorSecondary')}
 section, .section, header, footer {
-  @apply px-6 py-8;
+  @apply px-4 py-8;
   @screen md {
     @apply px-16;
   }
@@ -59,19 +59,19 @@ section, .section, header, footer {
 h1 {
   @apply text-5xl;
   @screen lg {
-    @apply text-8xl leading-tight;
+    @apply text-6xl leading-tight;
   }
 }
 h2 {
-  @apply text-5xl;
+  @apply text-4xl;
   @screen md {
-    @apply text-7xl leading-tight;
+    @apply text-5xl leading-tight;
   }
 }
 h3 {
-  @apply text-4xl;
+  @apply text-3xl;
   @screen md {
-    @apply text-6xl;
+    @apply text-3xl;
   }
 }
 p {

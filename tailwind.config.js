@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  purge: false,
   theme: {
     fontFamily: {
       display: ['Libre Baskerville', 'serif']
