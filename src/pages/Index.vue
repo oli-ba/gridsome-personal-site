@@ -68,7 +68,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://olivierbalaguer.com/"
+        href: "https://www.olivierbalaguer.com/"
       }
     ],
     meta: [

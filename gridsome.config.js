@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Olivier Balaguer',
-  siteUrl: 'https://olivierbalaguer.com',
+  siteUrl: 'https://www.olivierbalaguer.com',
   siteDescription: 'Remote UI/UX facilitator based in London, UK.',
   resolveAbsolutePaths: true,
   plugins: [
