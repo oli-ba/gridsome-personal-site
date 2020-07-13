@@ -19,12 +19,17 @@
               title="Copy my email address"
             >
               <IconEmail />
-              Copy my email
+              Copy email
             </button>
             <span v-if="hasCopied" class="text-xs absolute left-0 m-auto fade-in-out" style="width: 15rem; bottom: -15px">{{message}}</span>
           </div>
           <!-- <p class="text-xs" v-if="onCopy === true">Address copied to clipboard</p> -->
           <!-- <p v-if="onError === true">Copied!</p> -->
+        </li>
+        <li>
+          <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download class="">
+          <CV />Download CV
+          </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/olivierbalaguer" title="Let's connect!">
@@ -73,6 +78,7 @@ import IconEmail from '~/assets/svgs/send.svg?inline'
 import LinkedIn from '~/assets/svgs/linkedin.svg?inline'
 import Github from '~/assets/svgs/github.svg?inline'
 import Instagram from '~/assets/svgs/instagram.svg?inline'
+import CV from '~/assets/svgs/icon-cv.svg?inline'
 
 export default {
   name: "Footer",
@@ -80,7 +86,8 @@ export default {
     IconEmail,
     LinkedIn,
     Github,
-    Instagram
+    Instagram,
+    CV
   },
   data() {
     return {

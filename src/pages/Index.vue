@@ -10,8 +10,11 @@
         <p class="font-body text-xl mb-4 lg:w-55ch md:w-full">
           Maker of meaningful digital touchpoints. Want to change direction, change behaviour, or change the world? <span v-show="hasName == true">Then {{name}},</span> I can help out.
         </p>
-        <a href="Olivier-Balaguer-CV-2020.pdf" download class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 md:mr-6">Download my CV</a>
+        <a href="https://calendly.com/olivier-ui-ux/30min?back=0" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 md:mr-6">Book a free 30 min meeting</a>
         <a href="https://www.linkedin.com/in/olivierbalaguer" class="cta mt-2 mb-4">Connect on LinkedIn</a>
+        <!-- <div>
+          <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download class="">Download my CV</a>
+        </div> -->
         <!-- <p class="font-body text-xl mb-12 relative lg:w-65ch md:w-full">
           I'm currently refreshing the ol' site and adding new work. If you're looking for my CV, <a href="Olivier-Balaguer-CV-2020.pdf" download class="font-bold underline">you can download it here</a>. If you would like to connect you can <a href="https://www.linkedin.com/in/olivierbalaguer" class="font-bold cursor-pointer underline">find me on LinkedIn</a>, or you can <a
             v-clipboard:copy="copyEmail"
