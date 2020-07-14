@@ -1,6 +1,6 @@
 <template>
-  <section class="clients bg-colorPrimary text-colorSecondary py-32">
-    <h3 class="text-xl text-center font-display mb-4">Previously At</h3>
+  <section class="clients bg-colorPrimary text-colorSecondary py-24">
+    <h3 class="text-xl text-center mb-4">Previously At</h3>
     <ul class="flex flex-wrap items-stretch justify-center">
       <li class="list-none">
         <DYC class="colorSecondary" />

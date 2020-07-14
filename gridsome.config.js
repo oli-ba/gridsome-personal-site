@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Olivier Balaguer',
   siteUrl: 'https://www.olivierbalaguer.com',
-  siteDescription: 'Remote UI/UX facilitator based in London, UK.',
+  siteDescription: 'Remote User Interface and User Experience Designer based in London.',
   resolveAbsolutePaths: true,
   plugins: [
     {use: 'gridsome-plugin-tailwindcss'},

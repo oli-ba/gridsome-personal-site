@@ -4,9 +4,6 @@
   >
     <div class="mt-6 md:mt-0">
       &copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.
-      <span class="block md:inline">
-        Made with <a href="https://gridsome.org/">Gridsome</a> 🤘
-      </span>
     </div>
     <div class="w-full md:w-1/3 order-first md:order-last">
       <ul class="flex justify-between text-sm">

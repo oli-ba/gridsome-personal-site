@@ -10,7 +10,7 @@
         <p class="font-body text-xl mb-4 lg:w-55ch md:w-full">
           Maker of meaningful digital touchpoints. Want to change direction, change behaviour, or change the world? <span v-show="hasName == true">Then {{name}},</span> I can help out.
         </p>
-        <a href="https://calendly.com/olivier-ui-ux/30min?back=0" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 md:mr-6">Book a free 30 min meeting</a>
+        <a href="https://calendly.com/olivier-ui-ux/30min?back=0" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 md:mr-6">Book a free 30 min one-to-one</a>
         <a href="https://www.linkedin.com/in/olivierbalaguer" class="cta mt-2 mb-4">Connect on LinkedIn</a>
         <!-- <div>
           <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download class="">Download my CV</a>
@@ -64,7 +64,7 @@ import Testimonial from "~/components/Testimonial.vue";
 
 export default {
   metaInfo: {
-    title: "Remote UI/UX facilitator & developer based in London",
+    title: "Remote UI/UX designer & developer based in London",
     link: [
       {
         rel: "canonical",
@@ -78,7 +78,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Remote UI/UX facilitator & developer based in London, UK"
+        content: "Remote UI/UX designer & developer based in London, UK"
       },
       {
         property: "og:image",
@@ -98,7 +98,7 @@ export default {
       },
       {
         name: "twitter:card",
-        content: "Remote UI/UX facilitator & developer based in London, UK"
+        content: "Remote UI/UX designer & developer based in London, UK"
       }
     ]
   },
