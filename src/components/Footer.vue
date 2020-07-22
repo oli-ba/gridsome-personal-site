@@ -24,8 +24,8 @@
           <!-- <p v-if="onError === true">Copied!</p> -->
         </li>
         <li>
-          <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download class="">
-          <CV />Download CV
+          <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download title="Download my CV">
+          <CV />Curriculum Vitae
           </a>
         </li>
         <li>
@@ -34,7 +34,7 @@
           </a>
         </li>
         <li>
-          <a href="https://github.com/oli-ba" title="Inspect my code">
+          <a href="https://github.com/oli-ba" title="Fork my site">
             <Github />Github
           </a>
         </li>
@@ -48,7 +48,8 @@
   </footer>
 </template>
 <style scoped>
-li { @apply list-none}
+li { @apply list-none opacity-75 transition-opacity duration-300}
+li:hover {@apply opacity-100}
 footer svg {
   @apply w-6 h-6 m-auto;
 }
