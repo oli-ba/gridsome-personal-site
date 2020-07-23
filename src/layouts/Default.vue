@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang='scss'>
-
+body {@apply bg-colorPrimary mt-2}
 .fade-enter-active {
   transition: opacity .5s;
 }
@@ -40,10 +40,10 @@ export default {
 
 .cta {
   border: 1px solid theme('colors.colorPrimary');
-  @apply w-full inline-flex items-center justify-center p-2 px-8 rounded-full font-bold transition-all text-center;
+  @apply w-full inline-flex items-center justify-center p-4 px-8 rounded-full font-bold transition-all text-center transition-all duration-500 ease-in-out;
   @screen md{@apply w-auto;}
   &:hover {
-    @apply bg-colorPrimary text-colorSecondary shadow-lg transition-all duration-500 ease-in-out;
+    @apply bg-colorPrimary text-colorSecondary bg-opacity-75 shadow-lg;
     border: 1px solid theme('colors.colorPrimary');
 
     & svg path {fill: theme('colors.colorSecondary')}
