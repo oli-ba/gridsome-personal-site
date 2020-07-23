@@ -7,11 +7,11 @@
         <h1 class="font-display leading-tight mb-6">
           Remote <br>UI/UX <br class="md:hidden"><span class="typed-text">{{ typeValue }}</span><span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
         </h1>
-        <p class="font-body text-xl mb-4 lg:w-55ch md:w-full">
+        <p class="font-body  mb-4 lg:w-55ch md:w-full">
           Maker of meaningful digital touchpoints. Want to change direction, change behaviour, or change the world? <span v-show="hasName == true">Then {{name}},</span> I can help out.
         </p>
-        <a href="https://calendly.com/olivier-ui-ux/30min?back=0" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 md:mr-6">Request a callback</a>
-        <a href="https://www.linkedin.com/in/olivierbalaguer" class="cta mt-2 mb-4">Connect on LinkedIn</a>
+        <a href="https://calendly.com/olivier-ui-ux/30min?back=0" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 text-xl">Get a callback</a>
+        <a href="https://www.linkedin.com/in/olivierbalaguer" class="block md:inline text-center mt-2 mb-4 md:mx-12 font-bold text-xl">Connect on LinkedIn</a>
         <!-- <div>
           <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download class="">Download my CV</a>
         </div> -->
