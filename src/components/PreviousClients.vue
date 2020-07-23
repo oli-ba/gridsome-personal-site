@@ -3,6 +3,9 @@
     <h3 class="text-xl text-center mb-4">Previously At</h3>
     <ul class="flex flex-wrap items-stretch justify-center">
       <li class="list-none">
+        <DYS class="colorSecondary" />
+      </li>
+      <li class="list-none">
         <DYC class="colorSecondary" />
       </li>
       <li class="list-none">
@@ -48,6 +51,7 @@
 </style>
 <script>
 import DYC from "~/assets/svgs/dream-yacht-charter.svg";
+import DYS from "~/assets/svgs/dream-yacht-sales.svg";
 import VibePay from "~/assets/svgs/vibe-pay.svg";
 import Burberry from "~/assets/svgs/burberry.svg";
 import Ticketmaster from "~/assets/svgs/ticketmaster.svg";
@@ -58,6 +62,7 @@ import EEMS from "~/assets/svgs/eems.svg";
 export default {
   components: {
     DYC,
+    DYS,
     VibePay,
     Burberry,
     Ticketmaster,

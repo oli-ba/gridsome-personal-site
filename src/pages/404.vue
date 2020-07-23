@@ -1,5 +1,5 @@
 <template>
-  <section class="hero h-screen text-colorPrimary px-16 flex flex-col justify-center">
+  <section class="hero h-screen text-colorSecondary px-16 flex flex-col justify-center">
     <p>404 Not Found</p>
     <h2 class="font-display leading-none lg:text-9xl md:text-6xl text-3xl mb-6">
       This is the end, my only friend the end...
@@ -10,7 +10,9 @@
     </g-link>
   </section>
 </template>
-
+<style scoped>
+svg path {fill: theme('colors.colorSecondary');}
+</style>
 <script>
 import ArrowRight from '~/assets/svgs/icon-arrow-right.svg?inline'
 export default {
