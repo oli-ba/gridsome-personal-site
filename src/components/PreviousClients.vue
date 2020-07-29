@@ -3,10 +3,7 @@
     <h3 class="text-xl text-center mb-4">Previously At</h3>
     <ul class="flex flex-wrap items-stretch justify-center">
       <li class="list-none">
-        <DYS class="colorSecondary" />
-      </li>
-      <li class="list-none">
-        <DYC class="colorSecondary" />
+        <DYG class="colorSecondary" />
       </li>
       <li class="list-none">
         <VibePay class="colorSecondary" />
@@ -14,9 +11,9 @@
       <li class="list-none">
         <Burberry class="colorSecondary" />
       </li>
-      <li class="list-none">
-        <Ticketmaster class="colorSecondary" />
-      </li>
+      <!-- <li class="list-none">
+        <LiveNation class="colorSecondary" />
+      </li> -->
       <li class="list-none">
         <Deliveroo class="colorSecondary" />
       </li>
@@ -28,6 +25,9 @@
       </li>
       <li class="list-none">
         <EEMS class="colorSecondary" />
+      </li>
+      <li class="list-none">
+        <Ticketmaster class="colorSecondary" />
       </li>
     </ul>
   </section>
@@ -50,8 +50,7 @@
 }
 </style>
 <script>
-import DYC from "~/assets/svgs/dream-yacht-charter.svg";
-import DYS from "~/assets/svgs/dream-yacht-sales.svg";
+import DYG from "~/assets/svgs/dream-yacht-group.svg";
 import VibePay from "~/assets/svgs/vibe-pay.svg";
 import Burberry from "~/assets/svgs/burberry.svg";
 import Ticketmaster from "~/assets/svgs/ticketmaster.svg";
@@ -59,17 +58,18 @@ import Deliveroo from "~/assets/svgs/deliveroo.svg";
 import MCSaatchi from "~/assets/svgs/mc-saatchi.svg";
 import FCC from "~/assets/svgs/future-cities-catapult.svg";
 import EEMS from "~/assets/svgs/eems.svg";
+import LiveNation from "~/assets/svgs/live-nation.svg";
 export default {
   components: {
-    DYC,
-    DYS,
+    DYG,
     VibePay,
     Burberry,
     Ticketmaster,
     Deliveroo,
     MCSaatchi,
     FCC,
-    EEMS
+    EEMS,
+    LiveNation
   }
 };
 </script>

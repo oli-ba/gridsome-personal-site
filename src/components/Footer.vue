@@ -25,7 +25,12 @@
         </li>
         <li>
           <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download title="Download my CV">
-          <CV />Curriculum Vitae
+          <CV />CV
+          </a>
+        </li>
+        <li>
+          <a href="pdfs/Olivier-Balaguer-Latest-Projects-2020.pdf" download title="See my latest projects">
+          <Portfolio />Portfolio
           </a>
         </li>
         <li>
@@ -80,6 +85,7 @@ import LinkedIn from '~/assets/svgs/linkedin.svg?inline'
 import Github from '~/assets/svgs/github.svg?inline'
 import Instagram from '~/assets/svgs/instagram.svg?inline'
 import CV from '~/assets/svgs/icon-cv.svg?inline'
+import Portfolio from '~/assets/svgs/icon-book.svg?inline'
 
 export default {
   name: "Footer",
@@ -88,7 +94,8 @@ export default {
     LinkedIn,
     Github,
     Instagram,
-    CV
+    CV,
+    Portfolio
   },
   data() {
     return {

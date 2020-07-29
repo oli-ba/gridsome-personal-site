@@ -3,7 +3,9 @@
     <!-- <Header v-show="hasName == false" /> -->
     <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
       <div class="md:pt-24 md:w-4/5">
-        <p class="font-bold">&mdash; Hello <span v-show="hasName == true">{{name}},</span> I'm Oli. </p>
+        <p class="font-bold">
+          &mdash; Hello <span v-show="hasName == true">{{name}},</span> I'm o·li·vyé. 
+        </p>
         <h1 class="font-display leading-tight mb-6">
           Remote <br>UI/UX <br class="md:hidden"><span class="typed-text">{{ typeValue }}</span><span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
         </h1>
