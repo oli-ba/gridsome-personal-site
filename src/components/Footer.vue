@@ -29,7 +29,7 @@
           </a>
         </li>
         <li>
-          <a href="pdfs/Olivier-Balaguer-Latest-Projects-2020.pdf" download title="See my latest projects">
+          <a href="pdfs/OB-Latest-Projects-Portfolio-2020.pdf" download title="See my latest projects">
           <Portfolio />Portfolio
           </a>
         </li>
