@@ -885,17 +885,19 @@
     unist-util-visit "^1.4.0"
     vfile "^4.0.0"
 
-"@gridsome/vue-remark@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/vue-remark/-/vue-remark-0.2.0.tgz#9ee1233204843a11f05be2422fba781d964da7f1"
-  integrity sha512-o4CCA/DnSojP/oYB1d8/uEVbc9wxMpl/MkFZZH5V2rPQ6XA+IxeewbgG/ByMP2YcAL0kBYXJJOmrBwwKapO8cw==
+
+"@gridsome/vue-remark@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@gridsome/vue-remark/-/vue-remark-0.2.2.tgz#451518e646f0f729a981c44d26788dc22cefebe8"
+  integrity sha512-lnu5bK8HbcfWa4311pO+seOR3vgvhsVQ9xqZ5P6J9GJRe7RtXQJyJ8Ia2Y7SPeWQwkgM72aFxe6tfH4jWhj6mQ==
+
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/parser" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
     "@babel/traverse" "^7.0.0"
     "@gridsome/source-filesystem" "^0.6.2"
-    "@gridsome/transformer-remark" "^0.5.0"
+    "@gridsome/transformer-remark" "^0.6.1"
     hash-sum "^1.0.2"
     hast-util-to-html "^5.0.0"
     he "^1.2.0"
