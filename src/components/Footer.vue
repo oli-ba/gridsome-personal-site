@@ -24,12 +24,12 @@
           <!-- <p v-if="onError === true">Copied!</p> -->
         </li>
         <li>
-          <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download title="Download my CV">
+          <a href="https://static.olivierbalaguer.com/pdfs/Olivier-Balaguer-CV-2020.pdf" download title="Download my CV">
           <CV />CV
           </a>
         </li>
         <li>
-          <a href="pdfs/OB-Latest-Projects-Portfolio-2020.pdf" download title="See my latest projects">
+          <a href="https://static.olivierbalaguer.com/pdfs/OB-Latest-Projects-Portfolio-2020.pdf" download title="See my latest projects">
           <Portfolio />Portfolio
           </a>
         </li>
