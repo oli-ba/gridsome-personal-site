@@ -47,7 +47,6 @@ Adventurous time poor professionals willing to pay a premium for a memorable exp
 - Quantitative and qualitative user research
 - Competitor research
 - Site usability, accessibility and heuristics
-<!-- - User journey mapping  -->
 - Ideation & sketching
 - Wireframes
 - Mockups
