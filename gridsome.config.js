@@ -30,6 +30,14 @@ module.exports = {
         pathPrefix: '/blog', // Add route prefix. Optional
         template: './src/templates/tplBlog.vue' // Optional
       }
+    },
+    {
+      use: '@gridsome/plugin-critical',
+      options: {
+        paths: ['/'],
+        width: 1300,
+        height: 900
+      }
     }
   ],
   chainWebpack: config => {

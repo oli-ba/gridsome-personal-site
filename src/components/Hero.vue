@@ -3,7 +3,7 @@
     <div class="md:pt-24 md:w-4/5">
       <p class="font-bold">
         &mdash; Hello
-        <span v-show="hasName == true">{{name}},</span> I'm o·li·vyé.
+        <span v-if="hasName">{{name}},</span> I'm o·li·vyé.
       </p>
       <h1 class="font-display leading-tight mb-6">
         Remote
@@ -14,7 +14,7 @@
       </h1>
       <p class="font-body mb-4 lg:w-55ch md:w-full">
         Maker of meaningful digital touchpoints. Want to change direction, change behaviour, or change the world?
-        <span v-show="hasName == true">Then {{name}},</span> I can help out.
+        <span v-if="hasName">Then {{name}},</span> I can help out.
       </p>
       <a
         href="https://calendly.com/olivier-ui-ux/30min?back=0"
@@ -53,20 +53,21 @@ export default {
   },
   beforeCreate() {
     // this.$store.commit('setName', this.$route.query.hello)
-    if (this.$route.query.hello) {
-      this.name = this.$route.query.hello;
-    }
+    // if (this.$route.query.hello) {
+    //   this.name = this.$route.query.hello;
+    // }
   },
   created() {
     setTimeout(this.typeText, this.newTextDelay + 200);
     if (this.$route.query.hello) {
       this.hasName = true;
+      this.name = this.$route.query.hello;
     }
   },
   data() {
     return {
       hasName: false,
-      name: this.$route.query.hello,
+      name: null,
       message: null,
       hasCopied: false,
       typeValue: "",
