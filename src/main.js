@@ -29,9 +29,4 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     name: 'keywords',
     content: 'UI Design, UX Design'
   })
-  // head.link.push({
-  //   rel: 'stylesheet',
-  //   href: 'https://fonts.googleapis.com/css?family=Kulim+Park:400,600|Libre+Baskerville:400&display=swap'
-  // })
-  
 }

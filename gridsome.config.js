@@ -13,24 +13,24 @@ module.exports = {
     {use: 'gridsome-plugin-tailwindcss'},
     {use: 'vue-clipboard2'},
     {use: 'gridsome-plugin-svg'},
-    {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'Work', // Required
-        baseDir: './src/content/work', // Where .md files are located
-        pathPrefix: '/portfolio', // Add route prefix. Optional
-        template: './src/templates/Template_work.vue' // Optional
-      }
-    },
-    {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'Blog', // Required
-        baseDir: './src/content/blog', // Where .md files are located
-        pathPrefix: '/blog', // Add route prefix. Optional
-        template: './src/templates/Template_blog.vue' // Optional
-      }
-    }
+    // {
+    //   use: '@gridsome/vue-remark',
+    //   options: {
+    //     typeName: 'Work', // Required
+    //     baseDir: './content/work', // Where .md files are located
+    //     pathPrefix: '/portfolio', // Add route prefix. Optional
+    //     template: './src/templates/tplWork.vue' // Optional
+    //   }
+    // },
+    // {
+    //   use: '@gridsome/vue-remark',
+    //   options: {
+    //     typeName: 'Blog', // Required
+    //     baseDir: './content/blog', // Where .md files are located
+    //     pathPrefix: '/blog', // Add route prefix. Optional
+    //     template: './src/templates/tplBlog.vue' // Optional
+    //   }
+    // }
   ],
   chainWebpack: config => {
     config.resolve.alias.set('@projects', '@/assets/images/projects')
