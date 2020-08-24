@@ -1,9 +1,10 @@
 <template>
   <Layout class="bg-colorSecondary">
-    <!-- <Header v-show="hasName == false" /> -->
+    <!-- <Header /> -->
     <Hero />
     <PreviousClients />
     <Testimonial />
+    <Gallery />
   </Layout>
 </template>
 <style>
@@ -28,13 +29,15 @@ import PreviousClients from "~/components/PreviousClients.vue";
 import Header from "~/components/Header.vue";
 import Testimonial from "~/components/Testimonial.vue";
 import Hero from "~/components/Hero.vue";
+import Gallery from "~/components/Gallery.vue";
 
 export default {
   components: {
     Header,
     PreviousClients,
     Testimonial,
-    Hero
+    Hero,
+    Gallery
   },
   metaInfo: {
     title: "Remote UI/UX designer & developer based in London",
