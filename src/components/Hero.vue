@@ -1,29 +1,32 @@
 <template>
   <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
-    <div class="md:pt-24 md:w-4/5">
-      <p class="font-bold">
+    <div class="md:pt-24 md:w-full">
+      <p class="font-bold text-center">
         &mdash; Hello
-        <span v-show="hasName == true">{{name}},</span> I'm o·li·vyé.
+        <span v-show="hasName == true">{{name}},</span> I'm Olivier <span class="opacity-50">(o·li·vyé)</span>
       </p>
-      <h1 class="font-display leading-tight mb-6">
-        Remote
-        <br />UI/UX
-        <br class="md:hidden" />
+      <h1 class="font-display leading-tight mb-6 text-center">
+        Remote UI/UX
+        <br />
+        <span class="hidden">Designer</span>
         <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
+        <br> 
       </h1>
-      <p class="font-body mb-4 lg:w-55ch md:w-full">
-        Maker of meaningful digital touchpoints. Want to change direction, change behaviour, or change the world?
+      <p class="font-body mb-6 lg:w-55ch md:w-full text-center m-auto">
+        Maker of timeless digital touchpoints. Want to change direction, change behaviour, or change the world?
         <span v-show="hasName == true">Then {{name}},</span> I can help out.
       </p>
-      <a
-        href="https://calendly.com/olivier-ui-ux/30min?back=0"
-        class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 text-xl"
-      >Get a callback</a>
-      <a
-        href="https://www.linkedin.com/in/olivierbalaguer"
-        class="block md:inline text-center mt-2 mb-4 md:mx-12 font-bold text-xl"
-      >Connect on LinkedIn</a>
+      <div class="md:flex justify-center">
+        <a
+          href="https://calendly.com/olivier-ui-ux/30min?back=0"
+          class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 text-xl"
+        >Get a callback</a>
+        <a
+          href="https://www.linkedin.com/in/olivierbalaguer"
+          class="block md:inline text-center mt-2 mb-4 md:mx-12 cta bg-transparent font-bold text-xl border-colorPrimary border-solid border-2"
+        >Connect on LinkedIn</a>
+      </div>
     </div>
     <div class="lead"></div>
   </section>
@@ -71,10 +74,10 @@ export default {
       hasCopied: false,
       typeValue: "",
       typeStatus: false,
-      typeArray: ["Designer", "Facilitator", "Specialist"],
-      typingSpeed: 125,
-      erasingSpeed: 100,
-      newTextDelay: 1250,
+      typeArray: ["Designer.", "Facilitator.", "Specialist."],
+      typingSpeed: 100,
+      erasingSpeed: 85,
+      newTextDelay: 1225,
       typeArrayIndex: 0,
       charIndex: 0
     };
