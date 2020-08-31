@@ -69,11 +69,11 @@ DYCs site was lacking in basic usability.
 Get some sketches together of homepage, destinations, search, charter types 
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
-  <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
-  <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
-  <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
+  <g-image :src="https://placehold.it/600x600" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
+  <g-image :src="https://placehold.it/600x600" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
+  <g-image :src="https://placehold.it/600x600" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
 </div>
-<!-- <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" width="2046" height="4300" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" /> -->
+<!-- <g-image :src="https://placehold.it/600x600" quality="65" width="2046" height="4300" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" /> -->
 
 <!-- <g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image> -->
 

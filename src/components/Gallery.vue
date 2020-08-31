@@ -46,7 +46,7 @@ export default {
           description:
             "Basic qualitative and quantitative research • User flow mapping • Wireframing • Rapid prototyping • Applying good UX practices and principles • UI design with Figma",
           url: "/making-yacht-sailing-a-breeze",
-          image: require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')
+          image: "https://placehold.it/600x600"
         },
         {
           title: "Fixing a Leaking Booking System",
