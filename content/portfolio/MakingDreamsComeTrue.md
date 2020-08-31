@@ -1,6 +1,6 @@
 ---
 client: Dream Yacht Sales
-title: Making A Dream Come True
+title: Making Dreams Come True
 metaDescription: UX study on yacht booking
 overviewImage: DYC/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg
 featured: true

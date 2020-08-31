@@ -19,7 +19,7 @@ export default [
   {
     title: "Making Dreams Come True",
     description: "User flow mapping • Information Architecture • Wireframing • Rapid prototyping • Applying good UX practices and principles • UI design with Figma",
-    url: "/making-a-dream-come-true",
+    url: "/making-dreams-come-true",
     image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=771&q=80",
     bgPos: "left"
   },
