@@ -3,7 +3,7 @@
     <h1 class="text-4xl tracking-wide">
       <g-link to="/">{{ $static.metadata.siteName }}</g-link>
     </h1>
-    <!-- <nav role="navigation" aria-label="Menu" class="flex flex-grow w-full md:w-auto">
+    <nav role="navigation" aria-label="Menu" class="flex flex-grow w-full md:w-auto">
       <ul class="flex justify-evenly md:justify-end w-full flex-grow">
         <li class="hidden"><g-link to="/">Home</g-link></li>
         <li class="list-none md:ml-12">
@@ -13,10 +13,10 @@
           <g-link to="/about/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">About Me</g-link>
         </li>
         <li class="list-none md:ml-12">
-          <g-link to="/hire-me/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Work with me</g-link>
+          <g-link to="/hire-me/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Get a Callback</g-link>
         </li>
       </ul>
-    </nav> -->
+    </nav>
   </header>
 </template>
 
