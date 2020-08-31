@@ -16,10 +16,10 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Work', // Required
-        baseDir: './src/content/work', // Where .md files are located
+        typeName: 'Portfolio', // Required
+        baseDir: './content/portfolio', // Where .md files are located
         pathPrefix: '/portfolio', // Add route prefix. Optional
-        template: './src/templates/Template_work.vue' // Optional
+        template: './src/templates/tplWork.vue' // Optional
       }
     },
     {
