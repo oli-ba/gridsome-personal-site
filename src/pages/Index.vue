@@ -39,6 +39,7 @@
       <div class="lead"></div>
     </section>
     <PreviousClients />
+    <Cardwrapper />
     <Testimonial />
   </Layout>
 </template>
@@ -78,6 +79,7 @@ span.cursor.typing {
 import PreviousClients from "~/components/PreviousClients.vue";
 import Header from "~/components/Header.vue";
 import Testimonial from "~/components/Testimonial.vue";
+import Cardwrapper from "~/components/Cardwrapper.vue";
 
 export default {
   metaInfo: {
@@ -122,7 +124,8 @@ export default {
   components: {
     Header,
     PreviousClients,
-    Testimonial
+    Testimonial,
+    Cardwrapper
   },
   beforeCreate() {
     // this.$store.commit('setName', this.$route.query.hello)
