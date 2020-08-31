@@ -13,7 +13,7 @@
           <g-link to="/about/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">About Me</g-link>
         </li>
         <li class="list-none md:ml-12">
-          <g-link to="/hire-me/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Work with me</g-link>
+          <g-link to="/hire-me/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Get a Callback</g-link>
         </li>
       </ul>
     </nav>

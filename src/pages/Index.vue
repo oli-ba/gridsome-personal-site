@@ -1,35 +1,23 @@
 <template>
   <Layout class="bg-colorSecondary">
-    <!-- <Header /> -->
+    <Header />
     <Hero />
     <PreviousClients />
+    <!-- <Gallery /> -->
+    <!-- <RecentWork /> -->
+    <Cardwrapper />
     <Testimonial />
-    <Gallery />
   </Layout>
 </template>
-<style>
-.fade-in-out {
-  opacity: 0;
-  animation: in-out 3s ease;
-}
-@keyframes in-out {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-</style>
+
 <script>
 import PreviousClients from "~/components/PreviousClients.vue";
 import Header from "~/components/Header.vue";
 import Testimonial from "~/components/Testimonial.vue";
 import Hero from "~/components/Hero.vue";
 import Gallery from "~/components/Gallery.vue";
+import RecentWork from "~/components/RecentWork.vue";
+import Cardwrapper from "~/components/Cardwrapper.vue";
 
 export default {
   components: {
@@ -37,7 +25,9 @@ export default {
     PreviousClients,
     Testimonial,
     Hero,
-    Gallery
+    Gallery,
+    RecentWork,
+    Cardwrapper
   },
   metaInfo: {
     title: "Remote UI/UX designer & developer based in London",

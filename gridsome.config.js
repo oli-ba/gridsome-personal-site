@@ -16,8 +16,8 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Work', // Required
-        baseDir: './content/work', // Where .md files are located
+        typeName: 'Portfolio', // Required
+        baseDir: './content/portfolio', // Where .md files are located
         pathPrefix: '/portfolio', // Add route prefix. Optional
         template: './src/templates/tplWork.vue' // Optional
       }
@@ -33,6 +33,6 @@ module.exports = {
     // }
   ],
   chainWebpack: config => {
-    config.resolve.alias.set('@projects', '@/assets/images/projects')
+    config.resolve.alias.set('@projects', '@/assets/images/work/')
   },
 }

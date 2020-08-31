@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang='scss'>
-body {@apply bg-colorPrimary mt-2}
+body {@apply bg-colorPrimary}
 .fade-enter-active {
   transition: opacity .5s;
 }

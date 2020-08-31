@@ -1,15 +1,15 @@
 ---
-client: Dream Yacht Charter
-title: Making Yacht Sailing a Breeze
+client: Vibe Pay
+title: Turning Banking On Its Head
 metaDescription: UX study on yacht booking
+overviewImage: DYC/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg
 featured: true
 timeline: Feburary 2019 - March 2020
-team: US General Manager, Global Marketing Manager, Digital Lead, Lead Developer, Project Manager, External SEO Agency
+team: CEO, Technical Director, Lead Developer, PR Manager, Marketing Manager
 overview: >
-  Part of the Dream Yacht Group, Dream Yacht Charter is the world's leading ocean tourism company with a fleet of 1,250+ yachts scattered across 60+ destinations around the globe. The company was experiencing a growth spurt pre COVID-19 that was outpacing its ability to carefully consider design and  user experience. With a leaking Wordpress template that was dated and not exactly fit for purpose, I was tasked with steering the redesign of the Dream Yacht Groups flagship product.
-overviewImage: DYC-Homepage-Redesign.png
+  With the proliferation of Open Banking, Vibe Pay (VP) aims to make social payments easier. With a proof of concept in place, I was brought on board to lead VPs design of its mobile and desktop applications. With no mature branding in place I was tasked with laying the ground work for a mobile and web product that would evolve over the years.
+
 ---
-<!-- import DYCwireframe from '~/assets/images/projects/DYC-wireframe-flow.svg' -->
 
 ### The Problem
 The company wants to attract more non-sailors to experience the joy of sailing. However it’s traditionally intimidating for someone (without some prior knowledge of sailing) to charter a boat, let alone knowing where to sail. Coupled with an ever growing list of destinations and charter types, making a decision where and what to book can be difficult.
@@ -52,17 +52,6 @@ Adventurous time poor professionals willing to pay a premium for a memorable exp
 - Mockups
 - Prototypes
 - UI design
-<!-- <ol>
-  <li>[Quantitative and qualitative user research](#quantitative--qualitative-user-research)</li>
-  <li>[Competitor research](competitor-research)</li>
-  <li>Site usability, accessibility and heuristics</li>
-  <li>User journey mapping </li>
-  <li>Ideation & sketching</li>
-  <li>Wireframes</li>
-  <li>Mockups</li>
-  <li>Prototypes</li>
-  <li>UI design</li>
-</ol> -->
 
 #### Quantitative & qualitative user research
 Digging into DYCs Google Analytics we were able to identify exactly where users were spending most of their time (what mattered to them), where they dropped off, the typical device they use.
@@ -80,9 +69,16 @@ DYCs site was lacking in basic usability.
 #### Ideation & sketching
 Get some sketches together of homepage, destinations, search, charter types 
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+  <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
+  <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
+  <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" />
+</div>
+<!-- <g-image :src="require('!!assets-loader!@projects/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg')" quality="65" width="2046" height="4300" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" /> -->
 
-<g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image>
+<!-- <g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image> -->
+
+<!-- <g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image> -->
 
 #### Wireframes
 Starting off with a mobile-first approach.
@@ -102,8 +98,6 @@ Screenshots of components
     <h5 class="w-1/2 text-center">Original</h5>
     <h5 class="w-1/2 text-center">Redesign</h5>
   </div>
-  <!-- <g-image src="@/assets/images/projects/DYC/DYC-Homepage-Redesign.png" quality="75" width="2046" height="4300" fit="contain" class="" alt="DYC Homepage Redesign Overview"></g-image> -->
-  <!-- <g-image :src="require('!!assets-loader!@projects/DYC-crewed-redesign.png')" quality="65" width="2046" height="4300" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview"></g-image> -->
 </div>
 
 ### Results
