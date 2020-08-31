@@ -13,15 +13,15 @@ module.exports = {
     {use: 'gridsome-plugin-tailwindcss'},
     {use: 'vue-clipboard2'},
     {use: 'gridsome-plugin-svg'},
-    // {
-    //   use: '@gridsome/vue-remark',
-    //   options: {
-    //     typeName: 'Work', // Required
-    //     baseDir: './content/work', // Where .md files are located
-    //     pathPrefix: '/portfolio', // Add route prefix. Optional
-    //     template: './src/templates/tplWork.vue' // Optional
-    //   }
-    // },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Portfolio', // Required
+        baseDir: './content/portfolio', // Where .md files are located
+        pathPrefix: '/portfolio', // Add route prefix. Optional
+        template: './src/templates/tplWork.vue' // Optional
+      }
+    }
     // {
     //   use: '@gridsome/vue-remark',
     //   options: {
@@ -33,6 +33,6 @@ module.exports = {
     // }
   ],
   chainWebpack: config => {
-    config.resolve.alias.set('@projects', '@/assets/images/projects')
+    config.resolve.alias.set('@projects', '@/assets/images/work/')
   },
 }

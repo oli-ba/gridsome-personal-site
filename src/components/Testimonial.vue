@@ -1,10 +1,10 @@
 <template>
-  <section class="testimonial text-colorPrimary">
+  <section class="testimonial bg-colorPrimary text-colorSecondary">
     <h3 class="hidden">Testimonials</h3>
     <div class="flex flex-col">
       <div class="flex-col px-6 md:px-40 py-32">
         <blockquote
-          class="quote border-colorPrimary font-sans font-bold text-xl md:text-4xl leading-tight mb-12"
+          class="quote font-sans font-bold text-xl md:text-4xl leading-tight mb-12"
         >I always valued his proactive and professional approach and you could always count on Olivier really wanting to deliver on a brief. His expert opinion, professional and swift delivery of any project we worked on have been consistently outstanding.</blockquote>
         <div>
           <a href="https://cornellazar.com/" class="flex flex-row" title="Visit Cornel">

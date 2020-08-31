@@ -57,12 +57,6 @@
 <style lang='scss' scoped>
 li {
   @apply list-none transition-opacity duration-300;
-  @screen md {
-    @apply opacity-75;
-  }
-}
-li:hover {
-  @apply opacity-100;
 }
 footer svg {
   @apply w-6 h-6 m-auto;
