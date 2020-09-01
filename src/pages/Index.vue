@@ -1,43 +1,7 @@
 <template>
   <Layout class="bg-colorSecondary">
     <!-- <Header v-show="hasName == false" /> -->
-    <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
-      <div class="md:pt-24 md:w-4/5">
-        <p class="font-bold">
-          &mdash; Hello <span v-show="hasName == true">{{name}},</span> I'm o·li·vyé. 
-        </p>
-        <h1 class="font-display leading-tight mb-6">
-          Remote <br>UI/UX <br class="md:hidden"><span class="typed-text">{{ typeValue }}</span><span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
-        </h1>
-        <p class="font-body  mb-4 lg:w-55ch md:w-full">
-          Maker of meaningful digital touchpoints. Want to change direction, change behaviour, or change the world? <span v-show="hasName == true">Then {{name}},</span> I can help out.
-        </p>
-        <a href="https://calendly.com/olivier-ui-ux/30min?back=0" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-4 text-xl">Get a callback</a>
-        <a href="https://www.linkedin.com/in/olivierbalaguer" class="block md:inline text-center mt-2 mb-4 md:mx-12 font-bold text-xl">Connect on LinkedIn</a>
-        <!-- <div>
-          <a href="pdfs/Olivier-Balaguer-CV-2020.pdf" download class="">Download my CV</a>
-        </div> -->
-        <!-- <p class="font-body text-xl mb-12 relative lg:w-65ch md:w-full">
-          I'm currently refreshing the ol' site and adding new work. If you're looking for my CV, <a href="Olivier-Balaguer-CV-2020.pdf" download class="font-bold underline">you can download it here</a>. If you would like to connect you can <a href="https://www.linkedin.com/in/olivierbalaguer" class="font-bold cursor-pointer underline">find me on LinkedIn</a>, or you can <a
-            v-clipboard:copy="copyEmail"
-            v-clipboard:success="onCopy"
-            v-clipboard:error="onError"
-            title="copy my email to your clipboard"
-            class="font-bold cursor-pointer underline"
-          >
-            <span v-if="hasCopied">{{ message }}</span>
-            <span v-else>copy my email address</span>
-          </a> and paste into your email message.  
-          
-          
-        </p> -->
-        <!-- <g-link to="/services/" class="cta flex text-lg mb-12">
-          See how I can help
-          <ArrowRight class="ml-4" />
-        </g-link>-->
-      </div>
-      <div class="lead"></div>
-    </section>
+    <Hero />
     <PreviousClients />
     <Cardwrapper />
     <Testimonial />
@@ -78,6 +42,7 @@ span.cursor.typing {
 <script>
 import PreviousClients from "~/components/PreviousClients.vue";
 import Header from "~/components/Header.vue";
+import Hero from "~/components/Hero.vue";
 import Testimonial from "~/components/Testimonial.vue";
 import Cardwrapper from "~/components/Cardwrapper.vue";
 
@@ -123,6 +88,7 @@ export default {
   },
   components: {
     Header,
+    Hero,
     PreviousClients,
     Testimonial,
     Cardwrapper

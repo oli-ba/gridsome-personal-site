@@ -82,8 +82,6 @@ Get some sketches together of homepage, destinations, search, charter types
 #### Wireframes
 Starting off with a mobile-first approach.
 
-<DYCwireframe class="bg-gray-600 mt-16" />
-
 <!-- <g-image src="http://placehold.it/600" quality="10" width="600" height="600" fit="contain" class="" alt="image description"></g-image> -->
 
 <!-- #### Prototypes

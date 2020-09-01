@@ -1,5 +1,5 @@
 <template>
-  <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
+  <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full border-colorPrimary border-t-8 border-solid">
     <div class="md:pt-24 md:w-full">
       <p class="font-bold text-center">
         &mdash; Hello
@@ -8,7 +8,8 @@
       <h1 class="font-display leading-tight mb-6 text-center">
         Remote UI/UX
         <br />
-        <span class="hidden">Designer</span>
+        <!-- <span class="hidden">Designer</span> -->
+        <!-- <span class="typed-text">{{ typeValue }}</span> -->
         <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
         <br> 
@@ -56,6 +57,7 @@ export default {
   },
   beforeCreate() {
     // this.$store.commit('setName', this.$route.query.hello)
+    this.typeValue = document.querySelector('.typed-text').innerHTML
     if (this.$route.query.hello) {
       this.name = this.$route.query.hello;
     }
@@ -70,7 +72,6 @@ export default {
     return {
       hasName: false,
       name: this.$route.query.hello,
-      message: null,
       hasCopied: false,
       typeValue: "",
       typeStatus: false,
