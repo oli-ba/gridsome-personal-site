@@ -16,7 +16,7 @@
   </section>
 </template>
 <script>
-import Card from '~/components/Card'
+import Card from '@/components/Card'
 import latestWork from '@/latest_work'
 export default {
   components: {

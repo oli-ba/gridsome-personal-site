@@ -57,7 +57,7 @@ export default {
   },
   beforeCreate() {
     // this.$store.commit('setName', this.$route.query.hello)
-    this.typeValue = document.querySelector('.typed-text').innerHTML
+    // this.typeValue = document.querySelector('.typed-text').innerHTML
     if (this.$route.query.hello) {
       this.name = this.$route.query.hello;
     }

@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import { store, mutations } from '~/store.js'
+import { store, mutations } from '@/store.js'
 
 export default {
   computed: {
@@ -93,7 +93,7 @@ button:focus {
 }
 
 #burger.active .burger-bar {
-  background-color: #fff;
+  background-color: theme('colors.colorSecondary');
 }
 
 #burger.active .burger-bar--1 {

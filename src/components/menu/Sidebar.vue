@@ -19,10 +19,27 @@ export default {
   },
   methods: {
     closeSidebarPanel: mutations.toggleNav
+  },
+  destroyed() {
+    document.documentElement.style.overflow = 'auto'
+    document.ontouchmove = (e) => {true}
+  },
+  watch: {
+    isPanelOpen: function() {
+      if(store.isNavOpen){
+        document.documentElement.style.overflow = 'hidden'
+        // document.documentElement.style.position = 'fixed'
+        document.ontouchmove = (e) => {e.preventDefault();}
+        return
+      }
+
+      document.documentElement.style.overflow = 'auto'
+      document.ontouchmove = (e) => {true}
+    }
   }
 };
 </script>
-<style>
+<style lang="scss">
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.2s ease;
@@ -30,12 +47,12 @@ export default {
 
 .slide-enter,
 .slide-leave-to {
-  transform: translateX(-100%);
+  transform: translateY(100%);
   transition: all 150ms ease-in 0s;
 }
 
 .sidebar-backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  // background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -47,13 +64,13 @@ export default {
 
 .sidebar-panel {
   overflow-y: auto;
-  background-color: #130f40;
+  background-color: theme('colors.colorPrimary');
   position: fixed;
   left: 0;
-  top: 0;
-  height: 100vh;
+  top: 72px;
+  height: calc(100vh - 72px);
   z-index: 999;
   padding: 3rem 20px 2rem 20px;
-  width: 300px;
+  width: 100vw;
 }
 </style>
