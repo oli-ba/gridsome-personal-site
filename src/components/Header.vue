@@ -1,5 +1,5 @@
 <template>
-  <header aria-label="Header" class="flex flex-col md:flex-row justify-between items-start md:items-center bg-colorPrimary text-colorSecondary w-screen py-3 shadow-md">
+  <header aria-label="Header" class="flex justify-between items-center bg-colorPrimary text-colorSecondary w-screen py-3 shadow-md">
     <h1 class="text-4xl tracking-wide">
       <g-link to="/">
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -10,23 +10,47 @@
       <!-- {{ $static.metadata.siteName }} -->
       </g-link>
     </h1>
-    <nav role="navigation" aria-label="Menu" class="flex flex-grow w-full md:w-auto">
-      <ul class="flex justify-evenly md:justify-end w-full flex-grow">
-        <li class="hidden"><g-link to="/">Home</g-link></li>
-        <li class="list-none md:ml-12">
-          <g-link to="/services/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Services &amp; Portfolio</g-link>
-        </li>
-        <li class="list-none md:ml-12">
-          <g-link to="/about/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">About Me</g-link>
-        </li>
-        <li class="list-none md:ml-12">
-          <g-link to="/hire-me/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Get a Callback</g-link>
-        </li>
-      </ul>
+    <nav role="navigation" aria-label="Menu" class="">
+      <Burger /> 
+      <Sidebar>
+        <ul class="flex flex-col justify-evenly md:justify-end w-full flex-grow">
+          <li class="hidden"><g-link to="/">Home</g-link></li>
+          <li class="list-none md:ml-12">
+            <g-link to="/portfolio/making-sailing-a-breeze" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Services &amp; Portfolio</g-link>
+          </li>
+          <li class="list-none md:ml-12">
+            <g-link to="/about/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">About Me</g-link>
+          </li>
+          <li class="list-none md:ml-12">
+            <g-link to="/hire-me/" class="btn p-2 transition-all bg-opacity-0 ease-in-out duration-200">Get a Callback</g-link>
+          </li>
+        </ul>
+      </Sidebar>
     </nav>
   </header>
 </template>
-
+<static-query>
+query {
+  metadata {
+    siteName
+  }
+}
+</static-query>
+<script>
+import Burger from '~/components/menu/Burger.vue'
+import Sidebar from '~/components/menu/Sidebar.vue'
+export default {
+  components: {
+    Burger,
+    Sidebar
+  },
+  beforeCreate() {
+    if(this.$route.query.hello) {
+      sessionStorage.setItem('name', this.$route.query.hello)
+    }
+  }
+}
+</script>
 <style>
 nav a:hover:not(.active) {@apply bg-colorSecondary text-colorPrimary;}
 nav a.active {@apply bg-colorSecondary text-colorPrimary;}
@@ -43,23 +67,3 @@ nav a.btn-colorSecondary.active {@apply bg-white;}
 .btn-colorPrimary {@apply text-colorSecondary bg-colorPrimary;}
 .btn-colorSecondary {@apply text-colorPrimary bg-colorSecondary;}
 </style>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
-<script>
-
-export default {
-  name: 'Header',
-  beforeCreate() {
-    if(this.$route.query.hello) {
-      sessionStorage.setItem('name', this.$route.query.hello)
-    }
-  }
-}
-</script>
