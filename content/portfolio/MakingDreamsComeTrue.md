@@ -4,10 +4,10 @@ title: Making Dreams Come True
 metaDescription: UX study on yacht booking
 overviewImage: DYC/geran-de-klerk-AXSoVgLaHmc-unsplash.jpg
 featured: true
-timeline: Feburary 2019 - March 2020
+timeline: Feburary - March 2020
 team: Sales Director, Lead Developer, Project Manager, External SEO Agency
 overview: >
-  Dream Yacht Sales (DYS) is also another arm of Dream Yacht Group. They provide professional consultancy, tailored solutions and expert advice, making yacht ownership simple and easy. DYS' original site was hastily put together as the company had spend significant time and effort into a yacht configuration tool for prospective buyers. In doing so, a lot of corners where cut, an off-the-shelf Wordpress template which was not fit for purpose was used. The site was lacking in visual consistancy to its sister site, Dream Yacht Charter, and was in need of a re-work. I was tasked with overhauling the entire site and to visually align it to its charting sibling.
+  Dream Yacht Sales (DYS) is sales arm of the Dream Yacht Group. Providing professional consultancy, tailored solutions and expert advice to make yacht ownership simple and easy. DYS' original site was hastily put together as the company had spend significant time and effort into a yacht configuration tool for prospective buyers. In doing so, a lot of corners where cut, an off-the-shelf Wordpress template which was not fit for purpose was used. The site was lacking in visual consistancy to its sister site, Dream Yacht Charter, and was in need of a re-work. I was tasked with overhauling the entire site and to visually align it to its charting sibling.
 ---
 
 ### The Problem

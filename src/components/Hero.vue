@@ -16,7 +16,7 @@
       </h1>
       <p class="font-body mb-6 lg:w-55ch md:w-full text-center m-auto">
         Maker of timeless digital touchpoints. Want to change direction, change behaviour, or change the world?
-        <span v-show="hasName == true">Then {{name}},</span> I can help out.
+        <br class="md:hidden"><span v-show="hasName == true">Then {{name}},</span> I can help out.
       </p>
       <div class="md:flex justify-center">
         <a

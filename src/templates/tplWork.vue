@@ -1,14 +1,14 @@
 <template>
   <Layout class="bg-colorSecondary text-colorPrimary">
     <Header />
-    <section class="container flex flex-col justify-center pb-0 relative">
+    <section class="flex flex-col justify-center pb-0 relative">
       <div class="flex-inline mb-6 text-sm">
         <g-link to="/#latest-projects" class="inline-flex justify-start font-bold">
           <ArrowRight class="transform -rotate-180 m-auto mr-4 scale-75" />Back to lastest projects
         </g-link>
       </div>
       <!-- <g-image :src="require('!!assets-loader!@projects/' + $page.portfolio.overviewImage)" quality="65" width="2046" height="4300" fit="contain" style="margin-top:0" alt="DYC Homepage Redesign Overview" /> -->
-      <h2 class="font-display leading-tight mb-4 mt-0 md:text-9xl">{{ $page.portfolio.title }}</h2>
+      <h2 class="font-display leading-tight mb-4 mt-0 md:text-9xl md:w-3/4">{{ $page.portfolio.title }}</h2>
       <div class="md:w-2/3">
         <p class="font-body text-xl mb-4">
           <strong>Client:</strong>
