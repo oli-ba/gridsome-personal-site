@@ -839,29 +839,6 @@
     mime-types "^2.1.21"
     slash "^2.0.0"
 
-"@gridsome/transformer-remark@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.5.0.tgz#e872e91edc316205c507533395b8f1bc985185a1"
-  integrity sha512-uTVkc4BbQIuo9KzA4nchHhADHznLLyMXCTwSZ238xG2f5QWcsLtQRuPnKBID0nFx+9U6nvRE5YoC4FF2DBDU2A==
-  dependencies:
-    gray-matter "^4.0.2"
-    hash-sum "^1.0.2"
-    hast-util-to-html "^4.0.1"
-    html-to-text "^4.0.0"
-    lodash "^4.17.11"
-    lru-cache "^5.1.1"
-    remark-autolink-headings "^5.0.0"
-    remark-external-links "^3.0.0"
-    remark-fix-guillemets "^1.0.15"
-    remark-html "^8.0.0"
-    remark-parse "^6.0.0"
-    remark-slug "^4.2.3"
-    remark-squeeze-paragraphs "^3.0.2"
-    sanitize-html "^1.20.0"
-    unified "^7.0.0"
-    unist-util-visit "^1.4.0"
-    vfile "^4.0.0"
-
 "@gridsome/transformer-remark@^0.6.1":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.6.1.tgz#0fa71527289a21ff9cfeaf3a07c236b4165772ed"
@@ -885,12 +862,10 @@
     unist-util-visit "^1.4.0"
     vfile "^4.0.0"
 
-
 "@gridsome/vue-remark@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@gridsome/vue-remark/-/vue-remark-0.2.2.tgz#451518e646f0f729a981c44d26788dc22cefebe8"
   integrity sha512-lnu5bK8HbcfWa4311pO+seOR3vgvhsVQ9xqZ5P6J9GJRe7RtXQJyJ8Ia2Y7SPeWQwkgM72aFxe6tfH4jWhj6mQ==
-
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/parser" "^7.0.0"
@@ -4522,6 +4497,11 @@ gridsome@^0.7.18:
     webpack-hot-middleware "^2.24.3"
     webpack-merge "^4.2.1"
     yaml-loader "^0.5.0"
+
+gsap@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.5.1.tgz#36cf76787d1758e749469d5e9cbe365c186544c4"
+  integrity sha512-EMV0RSUKZNeTUzLKAizGlwxVOUyif3/g8I3S1aA/hf3gbqwBvmQ02x1RdTBQNQMOpHCVBv9y/vaHwfctoAg8zw==
 
 har-schema@^2.0.0:
   version "2.0.0"
@@ -10044,6 +10024,11 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-intersect@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/vue-intersect/-/vue-intersect-1.1.6.tgz#2c349354bcf9221a006636cbe3f657f8e1282c1d"
+  integrity sha512-m9K48wkti8K0no0F8QdiShukenLDg80JS246Lf7QWgI0XOHkBkzn921FCwLtb49Jj14KK8itVZw4iOVxPc/PsA==
 
 vue-loader@^15.7.1:
   version "15.9.2"

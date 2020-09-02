@@ -1,35 +1,37 @@
 <template>
   <section class="clients bg-colorPrimary text-colorSecondary py-24">
     <h3 class="text-xl text-center mb-4">Previously At</h3>
-    <ul class="flex flex-wrap items-stretch justify-center">
-      <li class="list-none">
-        <DYG class="colorSecondary" />
-      </li>
-      <li class="list-none">
-        <VibePay class="colorSecondary" />
-      </li>
-      <li class="list-none">
-        <Burberry class="colorSecondary" />
-      </li>
-      <!-- <li class="list-none">
-        <LiveNation class="colorSecondary" />
-      </li> -->
-      <li class="list-none">
-        <Deliveroo class="colorSecondary" />
-      </li>
-      <li class="list-none">
-        <MCSaatchi class="colorSecondary" />
-      </li>
-      <li class="list-none">
-        <FCC class="colorSecondary" />
-      </li>
-      <li class="list-none">
-        <EEMS class="colorSecondary" />
-      </li>
-      <li class="list-none">
-        <Ticketmaster class="colorSecondary" />
-      </li>
-    </ul>
+    <intersect @enter.once="staggerClientList">
+      <ul ref="clientList" class="flex flex-wrap items-stretch justify-center">
+        <li class="list-none">
+          <DYG class="colorSecondary" />
+        </li>
+        <li class="list-none">
+          <VibePay class="colorSecondary" />
+        </li>
+        <li class="list-none">
+          <Burberry class="colorSecondary" />
+        </li>
+        <!-- <li class="list-none">
+          <LiveNation class="colorSecondary" />
+        </li> -->
+        <li class="list-none">
+          <Deliveroo class="colorSecondary" />
+        </li>
+        <li class="list-none">
+          <MCSaatchi class="colorSecondary" />
+        </li>
+        <li class="list-none">
+          <FCC class="colorSecondary" />
+        </li>
+        <li class="list-none">
+          <EEMS class="colorSecondary" />
+        </li>
+        <li class="list-none">
+          <Ticketmaster class="colorSecondary" />
+        </li>
+      </ul>
+    </intersect>
   </section>
 </template>
 <style scoped>
@@ -59,6 +61,9 @@ import MCSaatchi from "~/assets/svgs/mc-saatchi.svg";
 import FCC from "~/assets/svgs/future-cities-catapult.svg";
 import EEMS from "~/assets/svgs/eems.svg";
 import LiveNation from "~/assets/svgs/live-nation.svg";
+import { TweenMax, Power3 } from 'gsap/all'
+import Intersect from 'vue-intersect'
+
 export default {
   components: {
     DYG,
@@ -69,7 +74,33 @@ export default {
     MCSaatchi,
     FCC,
     EEMS,
-    LiveNation
-  }
+    LiveNation,
+    Intersect
+  },
+  methods: {
+    staggerClientList({ delay = 0.15 }) {
+      this.$nextTick(() => {
+        const els = [...this.$refs.clientList.querySelectorAll('li')]
+        TweenMax.staggerFromTo(
+          els,
+          0.3,
+          {
+            y: 18,
+            opacity: 0
+          },
+          {
+            delay,
+            y: 0,
+            opacity: 1,
+            ease: Power3.easeOut,
+            stagger: 0.075
+          }
+        )
+      })
+    }
+  },
+  // mounted() {
+  //   this.staggerClientList()
+  // }
 };
 </script>
